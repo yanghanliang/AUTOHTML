@@ -1,0 +1,173 @@
+body {
+    background-color: #f7f8f9;
+}
+
+footer {
+    margin-top: 0px;    
+}
+
+.content .case h2 {
+    font-size: 18px;
+}
+
+/* comment-satrt */
+.content .w4>.comment {
+    background-color: #fff;
+    padding: 23px 20px 0px 20px;
+}
+
+.content .comment h3 {
+    font-weight: normal;
+}
+
+.content .comment .comment_line {
+    width: 1160px;
+    height: 1px;
+    margin-top: 19px;
+    margin-bottom: 20px;
+	background-color: #e5e5e5;
+}
+
+.comment .comment_box .com_left {
+    float: left;
+    width: 1020px;
+    height: 60px;
+    line-height: 60px;
+	border-radius: 4px;
+	background-color: #f7f8f9;
+	border: solid 1px #e5e5e5;
+}
+
+.comment .comment_box input {
+    width: 97%;
+    height: 98%;
+    margin-left: 15px;
+    background-color: #f7f8f9;
+}
+
+.comment .comment_box .com_right {
+    float: right;
+    width: 120px;
+    height: 60px;
+    cursor: pointer;
+    line-height: 60px;
+    text-align: center;
+	border-radius: 4px;
+	background-color: #007bff;
+}
+
+.comment_box .com_right button {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.comm_content {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.comm_content .cc_top img {
+    float: left;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.comm_content .cc_top .reply .gray {
+    color: #999999;
+}
+
+.comm_content .cc_top span {
+    float: left;
+    line-height: 24px;
+    margin-left: 7px;
+}
+
+.comm_content .cc_top .time_right {
+    float: right;
+}
+
+.comm_content .cc_middle {
+    margin-top: 13px;
+    margin-bottom: 14px;
+}
+
+.comm_content .cc_middle p {
+    color: #666;
+    line-height: 24px;
+}
+
+.comm_content .cc_bottom>div {
+    color: #7f7f7f;
+    cursor: pointer;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.comm_content .comm_line {
+    width: 1160px;
+    height: 1px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+	background-color: #e5e5e5;
+}
+
+.cc_bottom .reply .reply_top {
+    width: 1160px;
+    height: 36px;
+    text-align: right;
+    line-height: 36px;
+    border-radius: 4px;
+	background-color: #f7f8f9;
+	border: solid 1px #e5e5e5;
+}
+
+.cc_bottom .reply .reply_bottom {
+    margin-top: 12px;
+    line-height: 36px;
+    text-align: right;
+}
+
+.cc_bottom .reply input {
+    width: 98%;
+    height: 99%;
+    margin-left: 14px;
+    background-color: #f7f8f9;
+}
+
+.cc_bottom .reply span {
+    width: 60px;
+    height: 36px;
+    cursor: pointer;
+    text-align: center;
+	border-radius: 4px;
+    display: inline-block;
+}
+
+.cc_bottom .reply .rb_comment {
+    color: #ffffff;
+	background-color: #007bff;
+}
+/* comment-end */
+/* case-end */
+/* content-end  */
+
+
+.page {
+    padding-bottom: 46px;
+}
+
+/* dele_pop start */
+.dele_pop .popup>h3 {
+    text-align: left;
+    font-weight: normal;
+}
+
+.dele_pop .comm_content .comm_line {
+    width: 650px;
+    height: 1px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+	background-color: #e5e5e5;
+}
+/* dele_pop end */
+/* popup-end */

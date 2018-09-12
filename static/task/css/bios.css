@@ -1,0 +1,434 @@
+.banner .top {
+    top: 0;
+    position: fixed;
+    z-index: 999;
+}
+
+/* title-satrt */
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.tab_switch {
+    width: 355px;
+    height: 98px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+}
+
+.tab_switch .tabswit_ct {
+    width: 164px;
+    height: 97px;
+    float: left;
+}
+
+.tab_switch .tabswit_ct i {
+    font-size: 40px;
+}
+
+.tab_switch .tabswit_ct li:nth-child(1) {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.tab_switch .tabswit_ct .hover li {
+    color: #007bff;
+}
+
+.tab_switch .tabswit_ct ul {
+    cursor: pointer;
+}
+
+.tab_switch .tabswit_ct .hover {
+    height: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #007bff;
+}
+
+/* 弹窗-satart */
+.popup .fixed_select {
+    width: 307px;
+}
+
+/* 弹窗-end */
+
+/* title-end */
+
+/* content-satrt */
+.content {
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    position: relative;
+    background-color: #f7f8f9;
+}
+
+/* tab_top-satrt */
+
+.content .pack .tab_top {
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    line-height: 40px;
+    position: relative;
+}
+
+
+.pack .tab_top .add {
+    float: left;
+}
+
+.pack .tab_top .add button {
+    width: 160px;
+    height: 40px;
+    float: left;
+    font-size: 15px;
+    cursor: pointer;
+	color: #007bff;
+    line-height: 38px;
+    border-radius: 4px;
+    border: solid 1px #007bff;
+    background-color: #f7f8f9;
+}
+
+.pack .tab_top .add button i {
+    font-size: 30px;
+    margin-left: 22px;
+    float: left;
+}
+
+.pack .tab_top .add button span {
+    float: left;
+    margin-left: 5px;
+}
+
+.pack .tab_top .select {
+    width: 98px;
+    height: 38px;
+    float: right;
+    color: #007bff;
+    line-height: 38px;
+    text-align: center;
+	border-radius: 4px;
+    border: solid 1px #007bff;
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+}
+
+.pack .tab_top .select img {
+    top: 15px;
+    right: 8px;
+    margin-left: 3px;
+    position: absolute;
+}
+
+.pack .tab_top .select span {
+    margin-right: 17px;
+}
+
+.pack .tab_top .options {
+    width: 96px;
+    float: right;
+    top: 40px;
+    right: 0px;
+    position: absolute;
+    border-radius: 4px;
+    display: none;
+    padding: 1px;
+    overflow: hidden;
+    border: 1px solid #007bff;
+    background-color: #fff;
+}
+
+.pack .tab_top .options span {
+    width: 97px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pack .tab_top .options span:hover {
+    background-color: #ebebeb;
+}
+
+/* tab_top-end */
+
+/* table-start */
+/* 操作-satrt */
+.table tr td button {
+    width: 14px;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+table tr td button>div {
+    top: 1px;
+    height: 20px;
+    z-index: 255;
+    color: #fff;
+    padding: 0 4px;
+    font-size: 12px;
+    cursor: pointer;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+    background-color: #007bff;
+}
+
+table tr td button .build {
+    right: -50px;
+    display: none;
+    border-radius: 3px;
+}
+
+table tr td button .build div {
+    color: #007bff;
+    top: -1px;
+    left: -9px;
+    transform: rotate(180deg);
+    position: absolute;
+}
+
+table tr td button .delete {
+    right: -58px;
+    display: none;
+    border-radius: 3px;
+}
+
+table tr td button .delete div {
+    color: #007bff;
+    top: -1px;
+    left: -9px;
+    transform: rotate(180deg);
+    position: absolute;
+}
+
+table tr td button .queue {
+    width: 40px;
+    left: -52px;
+    display: none;
+    border-radius: 3px;
+}
+
+table tr td button .queue div {
+    color: #007bff;
+    top: 0px;
+    right: -9px;
+    position: absolute;
+}
+
+table tr td button:hover div {
+    display: block;
+}
+
+.table tr td span:nth-last-child(1) a {
+    color: #007bff;
+}
+/* 操作-end */
+
+.table table tr:nth-child(1) {
+	background-color: rgba(235, 235, 235, 0.5);
+}
+
+/* table-end */
+/* content-end */
+
+
+/* echarth-satrt */
+.echarth {
+    width: 100%;
+    height: 540px;
+    padding-top: 24px;
+    text-align: center;
+}
+
+.echarth .nc_top a {
+	color: #333333;
+	font-size: 18px;
+}
+
+/*任务统计信息-start*/
+/**工作流任务数目统计信息-start*/
+.echarth .ech_btn {
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 17px;
+}
+
+.echarth .ech_btn span {
+	display: inline-block;
+    width: 9px;
+	height: 2px;
+	margin-right: 2px;
+	-webkit-transform: skew(-50deg);
+	-moz-transform: skew(-50deg);
+	-o-transform: skew(-50deg);
+	-ms-transform: skew(-50deg);
+	transform: skew(-50deg);
+	background: #b2b2b2;
+}
+
+.echarth .ech_btn .echbtn_one {
+	width: 17px;
+	background-color: #007bff;
+}
+
+.echarth .ech_switch {
+	width: 1160px;
+	height: 470px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	background-color: #f2f6fc;
+	box-shadow: 0px 1px 2px #0000003d;
+}
+
+.echarth .ech_switch ul {
+	width: 2320px;
+}
+
+.echarth .ech_switch ul li {
+	width: 1160px;
+	height: 470px;
+	float: left;
+	position: relative;
+}
+
+
+#main,#main2 {
+	width: 500px;
+	height: 432px;
+	margin-top: 19px;
+	margin-left: 62px;
+}
+
+.echarth .ech_switch .title {
+    width: 500px;
+	top: 99px;
+    left: 607px;
+    text-align: left;
+	position: absolute;
+}
+
+.ech_switch .title .tit_top {
+	height: 25px;
+	line-height: 25px;
+	font-size: 26px;
+	margin-bottom: 20px;
+}
+
+.ech_switch .title .tit_bottom {
+	font-size: 18px;
+	line-height: 24px;
+	color: #666666;
+	text-align: left;
+}
+
+/* legend-start */
+.ech_switch .legend {
+	width: 254px;
+	height: 60px;
+	top: 375px;
+	left: 607px;
+	position: absolute;
+}
+
+.ech_switch .legend>div {
+	width: 127px;
+	height: 20px;
+	line-height: 20px;
+	margin-bottom: 20px;
+	float: left;
+}
+
+.ech_switch .legend>div>div {
+	width: 40px;
+	height: 20px;
+	float: left;
+	margin-right: 9px;
+}
+
+.ech_switch .legend .bios_icon div {
+	background-color: #e63810;
+}
+
+.ech_switch .legend .netWork_icon div {
+	background-color: #ff6b00;
+}
+
+.ech_switch .legend .nfvTest_icon div {
+	background-color: #e3b61f;
+}
+
+.ech_switch .legend .Others_icon div {
+	background-color: #13b5b1;
+}
+
+.ech_switch .legend span {
+	color: #333;
+	float: left;
+	text-align: left;
+}
+/* legend-end */
+
+
+.echarth .ech_left,.ech_right {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	top: 50%;
+	z-index: 255;
+	display: none;
+	outline: none;
+	cursor:pointer;
+	position: absolute;
+	border-radius: 25px;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.echarth i {
+	font-size: 25px;
+}
+
+.echarth .ech_left {
+	left: 19px;
+	transform: translateX(-50%);
+}
+
+.echarth .ech_right {
+	transform: translateX(50%);
+	right: 19px;
+}
+
+.echarth .w2 {
+	width: 1200px;
+}
+
+.echarth .w2 .contact {
+	width: 60px;
+	line-height: 60px;
+	height: 60px;
+	top: 165px;
+	left: 1194px;
+	text-align: center;
+	color: #fff;
+	background-color: #007bff;
+	box-shadow: 0px 0px 8px 0px 
+		rgba(160, 160, 160, 0.2);
+	border-radius: 4px;
+	position: absolute;
+}
+
+/*工作流任务数目统计信息-end*/
+

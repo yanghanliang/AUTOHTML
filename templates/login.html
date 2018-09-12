@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AUTO - Login</title>
+  <link rel="stylesheet" type="text/css" href="../static/common/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../static/common/css/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="../static/common/css/common.css"/>
+  <link rel="stylesheet" type="text/css" href="../static/common/css/global.css"/>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../static/common/img/favicon-16x16.png" type="image/png">
+</head>
+<body>
+  <div class="header">
+    <div class="header_wrapper">
+      <a class="header_logo">
+        <img src="../static/common/img/logo.png" alt="AUTO">
+      </a>
+    </div>
+  </div>
+  <div class="m_container">
+	  <div class="m_banner">
+      <img src="../static/common/img/login_bg.png" width="579px" height="428px">         
+	  </div>
+	  <div class="wrapper">
+  		<div class="loginPanel">
+  			  <div class="login-err-panel dn" id="err_area">
+  				<span class="icon-wrapper"><i class="icon24-login err" style="margin-top:-.2em;*margin-top:0;"></i></span><span id="err_tips"></span>
+  			  </div>
+
+  			  <form class="login-form" id="login-form">
+    				<div class="loginTop">
+    				  <i class="icon iconfont icon-yonghuxinxi"></i>
+    				  <input type="text" id="account" placeholder="用户名/邮箱">
+    				</div>
+    				<div class="loginTop">
+    				  <i class="icon iconfont icon-mima"></i>
+    				  <input type="password" id="password" placeholder="密码">
+    				</div>
+            <div class="loginCaptcha">
+              <input type="text" id="code_input" placeholder="输入验证码" value="" onblur="validateCode();" onfocus="clearCode();" maxlength="4">
+              <div id="v_container" style="width:100px; height:40px; lin-height:40px; display:inline-block; margin-right:7px;"></div>
+              <a href="javascript:void(0);" onclick="changeCode();">换一张</a>
+              <i class="code-tip-icon"></i>
+            </div>
+  			  </form>
+          
+          <div class="login-btn-panel">
+            <a class="btn btn-primary login-btn" title="点击登录" href="#" id="login_button">登录</a>
+          </div>
+
+  			  <div class="login-help-panel">
+    				<span>想开通新账户？<a id="login-link" href="register.html">注册</a></span>
+    				<a class="forget-pwd" href="#">忘记密码?</a>
+  			  </div>
+  		</div>
+	  </div>
+  </div>
+  <div class="footer">
+    <div class="link">
+      <a href="#">关于我们</a><b>|</b>
+  	  <a href="#">联系我们</a><b>|</b>
+  	  <a href="#">使用条款</a><b>|</b>
+  	  <a href="#">隐私政策</a>
+    </div>
+	  <p class="record">
+	   ©2018 中国移动通信研究院版权所有 京公网备案 11010801000158
+	  </p>
+  </div>
+
+    <script type="text/javascript" src="../static/common/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/common/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/common/js/gVerify.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#code_input").val("");
+        // $("#signin").prop("disabled", false);
+      });
+      
+      var verifyCode = new GVerify("v_container");
+      var codeInput = document.getElementById("code_input");
+
+      function changeCode() {
+        verifyCode.refresh();
+      }
+
+      function validateCode() {
+        var res = verifyCode.validate(codeInput.value);     
+        if(res) {
+          codeInput.style.borderColor ='#ebebeb';
+          $(".code-tip-icon").attr("class", "code-tip-icon correct")
+        } else {
+          codeInput.style.borderColor ='red';
+          $(".code-tip-icon").attr("class", "code-tip-icon error");
+        }
+      }
+
+      function clearCode() {
+        codeInput.value = "";
+        codeInput.style.borderColor ='#66afe9';
+        $(".code-tip-icon").attr("class", "code-tip-icon");
+      }
+    </script>
+</body>
+</html>

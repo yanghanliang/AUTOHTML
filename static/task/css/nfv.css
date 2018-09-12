@@ -1,0 +1,239 @@
+.banner .top {
+    top: 0;
+    position: fixed;
+    z-index: 999;
+}
+
+/* title-satrt */
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.tab_switch {
+    width: 1200px;
+    height: 98px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+}
+
+.tab_switch .tabswit_ct {
+    width: 164px;
+    height: 97px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.tab_switch .tabswit_ct i {
+    font-size: 40px;
+}
+
+.tab_switch .tabswit_ct li:nth-child(1) {
+    padding-top: 16px;
+    margin-bottom: 12px;
+}
+
+.tab_switch .tabswit_ct .hover li {
+    color: #007bff;
+}
+
+.tab_switch .tabswit_ct .hover {
+    height: 100%;
+    border-bottom: 1px solid #007bff;
+}
+/* title-end */
+
+/* content-satrt */
+.content {
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    position: relative;
+    background-color: #f7f8f9;
+}
+
+
+/* tab_top-satrt */
+.content .pack .tab_top {
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    line-height: 40px;
+    position: relative;
+}
+
+.pack .tab_top .add {
+    float: left;
+}
+
+.pack .tab_top .add a {
+    height: 38px;
+    float: left;
+    font-size: 15px;
+	color: #fff;
+    line-height: 38px;
+    margin-right: 15px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0 15px 0 10px;
+    border: solid 1px #007bff;
+    background-color: #007bff;
+}
+
+.pack .tab_top .add a:nth-child(1) {
+    color: #007bff;
+    background-color: #fff;
+}
+
+.pack .tab_top .add a i {
+    float: left;
+    font-size: 20px;
+}
+
+.pack .tab_top .add a:nth-child(1) i {
+    font-size: 30px;
+}
+
+.pack .tab_top .add a span {
+    float: left;
+    margin-left: 5px;
+}
+
+.pack .tab_top .select {
+    min-width: 109px;
+    height: 38px;
+    float: right;
+    color: #007bff;
+    line-height: 38px;
+    text-align: center;
+	border-radius: 4px;
+    border: solid 1px #007bff;
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.pack .tab_top .select img {
+    top: 15px;
+    right: 8px;
+    margin-left: 3px;
+    position: absolute;
+}
+
+.pack .tab_top .select span {
+    font-size: 15px;
+    margin-right: 17px;
+}
+
+.pack .tab_top .options {
+    width: 108px;
+    top: 40px;
+    right: 0px;
+    padding: 1px;
+    z-index: 255;
+    float: right;
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #007bff;
+    border-top: none;
+}
+
+.pack .tab_top .options span {
+    /* width: 97px; */
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pack .tab_top .options span:hover {
+    background-color: #ebebeb;
+}
+
+/* tab_top-end */
+
+/* table-start */
+/* 操作-satrt */
+.table tr td button {
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 30px;
+}
+
+table tr td button>div {
+    top: 1px;
+    height: 20px;
+    z-index: 255;
+    color: #fff;
+    padding: 0 4px;
+    font-size: 12px;
+    cursor: pointer;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+    background-color: #007bff;
+}
+
+table tr td button .build {
+    right: -44px;
+    display: none;
+    border-radius: 3px;
+}
+
+table tr td button .build div {
+    color: #007bff;
+    top: -1px;
+    left: -9px;
+    transform: rotate(180deg);
+    position: absolute;
+}
+
+table tr td button .delete {
+    right: -52px;
+    display: none;
+    border-radius: 3px;
+}
+
+table tr td button .delete div {
+    color: #007bff;
+    top: -1px;
+    left: -9px;
+    transform: rotate(180deg);
+    position: absolute;
+}
+
+table tr td button .queue {
+    width: 40px;
+    left: -52px;
+    display: none;
+    border-radius: 3px;
+}
+
+table tr td button .queue div {
+    color: #007bff;
+    top: 0px;
+    right: -9px;
+    position: absolute;
+}
+
+table tr td button:hover div {
+    display: block;
+}
+
+/* table tr td button:hover {
+    color: #007bff;
+} */
+
+.table tr td span:nth-last-child(1) a {
+    color: #007bff;
+}
+/* 操作-end */
+/* table-end */
+/* content-end */

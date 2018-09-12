@@ -1,0 +1,169 @@
+.tab_switch .tabswit_ct,.hover li {
+    color: #007bff;
+}
+
+.tab_top .search {
+    width: 200px;
+	height: 40px;
+    float: right;
+    margin-right: 15px;
+    border-radius: 4px;
+    padding-left: 10px;
+	background-color: #ffffff;
+	border: solid 1px #e1e1e1;
+}
+
+.pack .tab_top .options {
+    top: 39px;
+    width: 100%;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.tab_top .select .options span {
+    margin-right: 0px;
+}
+
+.pack .tab_top .select .sele_box {
+    padding: 0 10px;
+}
+
+.tab_top .pid {
+    float: right;
+    display: none;
+	border-radius: 4px;
+    border-right: none;
+    position: absolute;
+    background-color: #fff;
+    border: solid 1px #007bff;
+    border-right: none;
+	box-shadow: 0px 0px 6px 0px 
+		rgba(46, 46, 46, 0.2);
+}
+
+.tab_top .pid li {
+    height: 40px;
+    padding: 0 10px;
+    line-height: 40px;
+}
+
+.pack .tab_top .select i {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.tab_top .pid li:hover {
+    cursor: pointer;
+    color: #007bff;
+    background-color: #ebebeb;
+}
+
+/* 构建中-start */
+table .construction li:nth-child(1) {
+    color: #007bff;
+}
+
+table .construction li:nth-child(2) {
+    width: 56px;
+    height: 10px;
+    border-radius: 10px;
+    margin: 7px auto auto auto;
+    border: 2px solid #007bff;
+    background: url(../../../static/common/img/record.gif) no-repeat;
+}
+/* 构建中-end */
+
+.table td .edit {
+    color: #666;
+    margin-right: 30px;
+}
+
+.popup table td:nth-child(1) {
+    text-align: right;
+}
+
+input[type="checkbox"]:checked + label::before {
+	content: '\2714';
+	color: #007bff;
+	border-color: #007bff;
+}
+
+.custom {
+    width: 160px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    background-color: #ffffff;
+}
+
+.serial_number {
+    width: 56px;
+    height: 33px;
+    margin-left: 15px;
+    line-height: 33px;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+    border: solid 1px #ebebeb;
+	background-color: #f8f8f8;
+}
+
+.custom .sele_box {
+    height: 34px;
+    line-height: 34px;
+    border-radius: 4px;
+    padding: 0 0 0 10px;
+    border: solid 1px #ebebeb;
+}
+
+.custom .sele_box span {
+    float: left;
+}
+
+.custom .option_box {
+    top: -106px;
+    display: none;
+    position: absolute;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    border-bottom: none;
+}
+
+.custom .option_box span {
+    width: 100%;
+    height: 35px;
+    text-align: left;
+    line-height: 35px;
+    padding-left: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.custom .option_box span:hover {
+    background-color: #999;
+}
+
+.td_box button {
+    width: 80px;
+    height: 37px;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 4px;
+    text-align: center;
+	background-color: #007bff;
+}
+
+
+.td_box>li {
+    margin-top: 8px;
+}
+
+.popup .pop_line {
+    width: 430px;
+}
+
+.popup .fixed_select {
+    width: 307px;
+}

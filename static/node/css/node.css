@@ -1,0 +1,343 @@
+.w3_top .add {
+    width: 160px;
+    height: 40px;
+    float: left;
+    color: #007bff;
+    margin-top: 30px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    vertical-align: top;
+    margin-bottom: 10px;
+	border: solid 1px #007bff;
+}
+
+.w3_top .add i {
+    font-size: 34px;
+}
+
+.w3_top .add a {
+    color: #007bff;
+    font-size: 18px;
+    vertical-align: top;
+}
+
+.w3_top .w3_right {
+    float: right;
+    margin-top: 30px;
+    position: relative;
+}
+
+.w3 .w3_right .search {
+    width: 200px;
+    height: 40px;
+    float: right;
+    line-height: 40px;
+    margin-right: 15px;
+    border-radius: 4px;
+    padding-left: 10px;
+    background-color: #ffffff;
+    border: solid 1px #e1e1e1;
+}
+
+.minbox {
+	width: 568px;
+	height: 145px;
+	float: left;
+	margin-top: 20px;
+	position: relative;
+	background-color: #ffffff;
+	border: solid 1px #ebebeb;
+}
+
+.minbox .close {
+	left: 100%;
+	display: none;
+	color: #007bff;
+	cursor: pointer;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.minbox .close i {
+	font-size: 20px;
+}
+
+.minbox:hover {
+    box-shadow: 0px 0px 5px 0px #b4b1b170;
+}
+
+.minbox:hover .close {
+	display: block;
+}
+
+.minbox:nth-child(odd) {
+	margin-right: 19px;
+}
+
+.minbox .minbox_top {
+	width: 540px;
+	height: 50px;
+	margin: 0 auto;
+	line-height: 50px;
+	text-align: left;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.minbox .minbox_top>i {
+	width: 30px;
+	height: 30px;
+	color: #007bff;
+	border-radius: 15px;
+	margin-right: 10px;
+	border: solid 1px #007bff;
+}
+
+.minbox .minbox_top a {
+	color: #007bff;
+}
+
+.minbox_top .slave_icon {
+	width: 28px;
+	height: 28px;
+	float: left;
+    margin-top: 10px;
+	color: #007bff;
+	margin-right: 10px;
+	position: relative;
+	border-radius: 15px;
+	border: solid 1px #007bff;
+}
+
+.minbox_top .slave_icon i {
+	top: -10px;
+    left: 6px;
+    font-size: 17px;
+    position: absolute;
+}
+
+.minbox .minbox_bottom li {
+	margin-top: 10px;
+}
+
+.minbox .minbox_bottom .describe {
+	padding-left: 59px;
+	text-align: left;
+}
+
+.minbox .minbox_bottom li  i{
+	color: #007bff;
+	font-style: normal;
+	font-size: 14px;
+}
+
+.minbox .minbox_bottom a {
+	color: #fff;
+	font-size: 12px;
+	padding: 4px 14px;
+	margin-right: 90px;
+	border-radius: 2px;
+}
+
+.minbox .minbox_bottom li:nth-child(2) {
+	margin-left: 15px;
+	text-align: left;
+	margin-top: 15px;
+}
+
+.minbox_top .slave_icon i {
+	top: -10px;
+    left: 6px;
+    font-size: 17px;
+    position: absolute;
+}
+
+.minbox .minbox_bottom table {
+	color: #999;
+	text-align: left;
+	margin-left: 15px;
+	border-spacing:10px;
+	border-collapse:separate;
+}
+
+.minbox .minbox_bottom table tr td:nth-child(1) {
+	width: 72px;
+	vertical-align: top;
+}
+
+.minbox .minbox_bottom p {
+	color: #999;
+	line-height: 24px;
+}
+
+
+/* 弹窗-satart */
+.add_pop .popup {
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 22px 24px 33px 24px;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 5px black;
+}
+
+.add_pop .popup .close {
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.add_pop .popup .add_line {
+	width: 650px;
+	height: 1px;
+	margin: 20px auto 30px auto;
+	background-color: #ebebeb;
+}
+
+.add_pop .popup table {
+	margin: 0 auto;
+	border-spacing: 15px;
+	border-collapse: separate;
+}
+
+.add_pop .popup table tr td {
+    padding: 0px;
+}
+
+.add_pop .popup table tr td:nth-child(1) {
+    text-align: right;
+}
+
+.add_pop .popup .input_box {
+	width: 280px;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    padding: 10px;
+    margin-left: 15px;
+	border-radius: 4px;
+    border: solid 1px #ebebeb;
+    position: relative;
+    cursor: pointer;
+}
+
+.add_pop .popup .input_box img {
+    top: 16px;
+    right: 8px;
+    position: absolute;
+}
+
+.add_pop .popup .input_box:hover {
+    border: 1px solid #007bff;
+}
+
+.popup .text {
+    width: 298px;
+    height: 80px;
+    margin-top: 8px;
+    margin-left: 14px;
+    border-radius: 4px;
+	background-color: #ffffff;
+	border: solid 1px #ebebeb;
+}
+
+.popup .file input {
+    opacity: 0;
+}
+
+.popup .file_box {
+    position: relative;
+}
+
+.popup .file {
+    width: 100px;
+    height: 36px;
+    margin-top: 8px;
+    margin-left: 14px;
+    line-height: 36px;
+    border-radius: 4px;
+	background-color: #ffffff;
+	border: solid 1px #ebebeb;
+}
+
+.popup .file input {
+    top: 2px;
+    left: -54px;
+    width: 170px;
+    height: 34px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.popup .file_info span {
+    color: #007bff;
+}
+
+.popup .file_info {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 12px;
+    position: absolute;
+}
+
+.popup .btn {
+    margin-top: 35px;
+    text-align: left;
+    margin-left: 14px;
+}
+
+.popup .btn button {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    line-height: 40px;
+	background-color: #ebebeb;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+
+.popup .btn button:nth-child(2) {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.popup .select {
+    width: 300px;
+	background-color: #ffffff;
+	border-radius: 4px;
+    border: solid 1px #007bff;
+    overflow: hidden;
+}
+
+.popup .td_option {
+    position: relative;
+}
+
+.popup .td_option .select {
+    top: 48px;
+    left: 15px;
+    position: absolute;
+    text-align: left;
+    font-size: none;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+}
+
+.popup .td_option .select span {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    text-indent: 10px;
+}
+
+.popup .td_option .select span:hover {
+    background-color: #ebebeb;
+}
+
+/* 弹窗-end */

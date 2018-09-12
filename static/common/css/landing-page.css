@@ -1,0 +1,240 @@
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/bg-masthead.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 539px;
+  padding: 0;
+}
+
+header .button a{
+  width: 220px;
+  height: 45px;
+  line-height: 45px;
+  border: solid 1px #ffffff;
+  font-size: 16px;
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  bottom: 155px;
+  left: 164px;
+  z-index: 999;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+.features-icons .container {
+  max-width: 1200px;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+  font-size: 5rem;
+}
+
+
+.showcase .container-fluid {
+  max-width: 1200px;
+}
+.testimonials {
+  padding-top: 40px;
+  margin-top: 25px;
+  background-color: #f6f8ff;
+}
+
+.testimonials .testimonial-item {
+  max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+.call-to-action {
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  background: url("../img/bg-bottom.png") no-repeat;
+  padding-top: 55px;
+  padding-bottom: 57px;
+}
+
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+
+/* content-start */
+.content {
+  width: 1200px;
+  margin: 30px auto;
+}
+
+/* content_top-start */
+.content .content_top {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.content .content_top .ct_left {
+  float: left;
+  width: 740px;
+  height: 270px;
+	border-radius: 6px;
+  padding: 41px 0 0 42px;
+  background: url(../../common/img/home_bg01.png) no-repeat;
+}
+
+.content .content_top .ct_right {
+  float: right;
+  width: 440px;
+	height: 270px;
+  border-radius: 6px;
+  padding: 42px 0 0 36px;
+  background: url(../../common/img/home_bg02.png) no-repeat;
+}
+
+.content_top li:nth-child(1) {
+  font-size: 30px;
+}
+
+.content_top li:nth-child(2) {
+  font-size: 18px;
+  font-weight: 200;
+  margin: 15px 0 69px 0;
+}
+
+.content_top a {
+  width: 160px;
+  height: 36px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+	border: solid 1px #ffffff;
+}
+/* content_top-end */
+
+/* content_middle-start */
+.content_middle {
+  height: 350px;
+  overflow: hidden;
+}
+
+.content_middle .cm_left {
+  width: 600px;
+  float: left;
+}
+
+.content_middle .cm_left h4 {
+  font-weight: normal;
+}
+
+.content_middle .cm_left>div {
+  width: 600px;
+  height: 175px;
+  padding: 15px 20px 26px 28px;
+}
+
+.content_middle .blue_box {
+  z-index: -1;
+  width: 600px;
+  height: 175px;
+  position: absolute;
+  background-color: #f6f8ff;
+}
+
+.content_middle .cm_left>div p {
+  width: 551px;
+  font-size: 18px;
+  margin-top: 22px;
+}
+
+.content_middle .cm_left div:nth-child(2) {
+  color: #666;
+}
+
+.content_middle .cm_left div:nth-child(3) {
+  color: #666;
+}
+
+.content_middle .cm_right {
+  float: right;
+  position: relative;
+}
+
+.content_middle .cm_right .switch {
+  top: 249px;
+  right: 0;
+  position: absolute;
+}
+
+.content_middle .cm_right .switch>div {
+  width: 50px;
+  height: 50px;
+  display: none;
+  color: #fff;
+  cursor: pointer;
+  line-height: 50px;
+  text-align: center;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.cm_right .switch .btn_top {
+  margin-bottom: 1px;
+}
+
+.cm_right>i {
+  left: -14px;
+  top: 17px;
+  font-size: 35px;
+  color: #f6f8ff;
+  position: absolute;
+}
+/* content_middle-end */
+/* content-end */

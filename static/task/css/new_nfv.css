@@ -1,0 +1,490 @@
+.banner .top {
+    top: 0;
+    position: fixed;
+    z-index: 999;
+}
+
+.content .con_title {
+    display: block;
+    margin: 20px 0;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.content .con_title i {
+    font-size: 24px;
+    margin-right: -7px;
+    vertical-align: middle;
+}
+
+.content .con_title.clear_top {
+    margin-top: 0;
+}
+/* table-start */
+.content .form {
+    width: 1160px;
+    height: 690px;
+    padding-top: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px 0px rgba(46, 46, 46, 0.05);
+    border-radius: 4px;
+}
+
+.content table {
+    margin: 0 auto;
+    margin-top: -15px;
+    border-spacing: 15px;
+    border-collapse: separate;
+}
+
+.content table tr td {
+    padding: 0px;
+}
+
+.content table tr td:nth-child(1) {
+    font-size: 16px;
+    text-align: right;
+}
+
+.content .input_box {
+    width: 280px;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    padding: 10px;
+    margin-left: 15px;
+    border-radius: 4px;
+    border: solid 1px #ebebeb;
+    position: relative;
+    cursor: pointer;
+}
+
+.content .input_box img {
+    top: 16px;
+    right: 8px;
+    position: absolute;
+}
+
+.content .input_box:hover {
+    border: 1px solid #007bff;
+}
+
+.content .form_input {
+    width: 280px;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    padding: 10px;
+    margin-left: 15px;
+    border-radius: 4px;
+    border: solid 1px #ebebeb;
+}
+
+.content .form_input input {
+    width: 100%;
+    height: 100%;
+}
+
+.content .form_input:hover {
+    border: 1px solid #007bff;
+}
+
+/* .content .form_input input:focus {
+    width: 279px;
+    text-indent: 9px;
+    border-left: 1px solid #007bff;
+} */
+
+.content .td_text {
+    padding-top: 10px;
+    vertical-align: top;
+}
+
+.content .text {
+    width: 298px;
+    height: 80px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-left: 14px;
+    border: solid 1px #ebebeb;
+}
+
+.content .file input {
+    opacity: 0;
+}
+
+.content .td_file {
+    padding-top: 10px;
+    vertical-align: top;
+}
+
+.content .file_box {
+    width: 375px;
+    height: 72px;
+    position: relative;
+}
+
+.content .file {
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    margin-left: 14px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: solid 1px #ebebeb;
+}
+
+.content .file_info {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 12px;
+    position: absolute;
+}
+
+.content .file_info .info_box {
+    width: 120px;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    border-radius: 4px;
+    position: relative;
+    text-align: center;
+}
+
+.content .file_info .info_box:hover {
+    background-color: rgba(0, 123, 255, 0.08);
+}
+
+.content .file_info .info_box img {
+    top: 0px;
+    left: 100%;
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.content .file_info .info_box:hover img {
+    display: block;
+}
+
+.content .btn {
+    margin-top: 25px;
+    text-align: left;
+    margin-left: 14px;
+}
+
+.content .btn button {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    line-height: 40px;
+    background-color: #ebebeb;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.content .btn button:nth-child(2) {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.content .fixed_select {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: solid 1px #007bff;
+    overflow: hidden;
+}
+
+.content .td_option {
+    position: relative;
+}
+
+.content .td_option .fixed_select {
+    top: 43px;
+    left: 15px;
+    position: absolute;
+    text-align: left;
+    font-size: none;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+}
+
+.content .td_option .fixed_select span {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    text-indent: 10px;
+}
+
+.content .td_option .fixed_select span:hover {
+    background-color: #ebebeb;
+}
+/* table-end */
+
+
+/* popup-start */
+.add_pop .pop_box {
+    top: 50%;
+    left: 50%;
+    width: 909px;
+    height: 641px;
+    position: fixed;
+    background-color: #ffffff;
+    padding: 21px 25px 18px 26px;
+    transform: translate(-50%, -50%);
+}
+
+.add_pop .pop_box .pop_title {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.add_pop .pop_box .pop_line {
+    width: 910px;
+    height: 1px;
+    margin-bottom: 17px;
+    background-color: #ebebeb;
+}
+
+.add_pop .pop_box .function {
+    height: 36px;
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 18px;
+}
+
+.add_pop .pop_box .function span {
+    float: left;
+    height: 34px;
+    padding: 0 8px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    border: solid 1px #ebebeb;
+}
+
+/* 全选 */
+.add_pop .pop_box .function .all_sele {
+    color: #fff;
+    background-color: #007bff;
+}
+
+/* 选了一部分 */
+.add_pop .pop_box .function .part_sele {
+    color: #fff;
+    background-color: #34cc3e;
+}
+
+/* 点击过,做个标记 */
+.add_pop .pop_box .function .sign {
+    border-color: #007bff;
+}
+
+.add_pop .pop_box .function i {
+    float: left;
+    font-style: normal;
+    margin-right: 10px;
+}
+
+
+.category {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* 一级分类-start */
+.add_pop .pop_box .sele_box {
+    width: 279px;
+    height: 466px;
+    float: left;
+    position: relative;
+    padding: 21px 12px 0px 7px;
+    border: solid 1px #ebebeb;
+}
+
+.sele_box .min_sele {
+    height: 446px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.sele_box .min_sele::-webkit-scrollbar {
+    display: none;
+}
+
+.sele_box form {
+    position: absolute;
+}
+
+.sele_box .min_sele .all_sele {
+    font-size: 18px;
+}
+
+.min_sele .min_line {
+    width: 279px;
+    height: 1px;
+    margin-top: 10px;
+    background-color: #ebebeb;
+}
+
+.sele_box .min_sele .pid_box {
+    position: relative;
+}
+
+.min_sele .ver_line {
+    width: 1px;
+    height: 100%;
+    top: 11px;
+    left: 9px;
+    z-index: -1;
+    position: absolute;
+    background-color: #cdcdcd;
+}
+
+.min_sele .box:hover {
+    cursor: pointer;
+    color: #007bff;
+    background-color: rgba(153, 153, 153, 0.1);
+}
+
+.min_sele .box span {
+    height: 40px;
+    /* width: 230px; */
+    line-height: 40px;
+    display: block;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.min_sele .pid_box .box .hover {
+    color: #007bff;
+}
+
+.sele_bottom,.sele_top {
+    width: 100%;
+    height: 18px;
+    left: 0px;
+    color: #000;
+    cursor: pointer;
+    z-index: 66px;
+    text-align: center;
+    position: absolute;
+    background-color: rgba(235, 235, 235, 0.4);
+}
+
+.sele_top {
+    top: 0px;
+    display: none;
+}
+
+.sele_bottom {
+    bottom: 0px;
+}
+
+.sele_bottom i,.sele_top i {
+    font-size: 12px;
+}
+
+/* 一级分类-end */
+
+/* 二级分类-start */
+.sele_box2 .min_sele {
+    height: 320px;
+    margin-top: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.sele_box2 .min_sele::-webkit-scrollbar {
+    display: none;
+}
+
+.pop_box .sele_box2 {
+    width: 266px;
+    height: 348px;
+    float: left;
+    display: none;
+    margin-left: 10px;
+    position: relative;
+    padding: 12px 10px 0px 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 4px 0px rgba(46, 46, 46, 0.2);
+    border: solid 1px #ebebeb;
+}
+
+.sele_box2 .triangle {
+    width: 0px;
+    height: 0px;
+    top: 82px;
+    left: -10px;
+    position: absolute;
+}
+
+/* 二级分类-end */
+
+/* 三级分类-start */
+.pop_box .sele_box3 {
+    width: 266px;
+    height: 348px;
+    float: left;
+    display: none;
+    margin-left: 12px;
+    position: relative;
+    padding: 12px 10px 0px 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 4px 0px rgba(46, 46, 46, 0.2);
+    border: solid 1px #ebebeb;
+}
+
+.sele_box3 .min_sele {
+    height: 320px;
+    margin-top: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.sele_box3 .min_sele::-webkit-scrollbar {
+    display: none;
+}
+
+.sele_box3 .triangle {
+    width: 0px;
+    height: 0px;
+    top: 82px;
+    left: -10px;
+    position: absolute;
+}
+/* 三级分类-end */
+
+.pop_box .btn {
+    left: 50%;
+    bottom: 8px;
+    position: absolute;
+    transform: translatex(-50%);
+}
+
+.pop_box .btn button {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    line-height: 40px;
+    border-radius: 4px;
+    margin-right: 20px;
+    background-color: #ebebeb;
+}
+
+.pop_box .btn .confirm {
+    color: #ffffff;
+    background-color: #007bff;
+}
+/* popup-end */

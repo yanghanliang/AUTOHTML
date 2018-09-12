@@ -1,0 +1,42 @@
+.historical .his_box .his_minbox {
+    width: 374px;
+	height: 110px;
+}
+
+.his_box .his_minbox .hismin_title {
+    font-size: 18px;
+}
+
+.his_box .his_minbox .hismin_title i {
+    font-size: 24px;
+}
+
+.his_box .his_minbox .his_line {
+    width: 350px;
+}
+
+.his_minbox table span {
+    color: #fff;
+    padding: 0 12px;
+}
+
+.his_minbox table tr td:nth-child(2) {
+    width: 95px;
+}
+ 
+.historical .his_box .his_minbox:nth-child(odd) {
+    margin-right: 0;
+}
+
+.historical .his_box .his_minbox {
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+
+.historical .his_box .his_minbox:nth-child(3n-2) {
+    margin-left: 0;
+}
+
+.historical .his_box .his_minbox:nth-last-child(1) {
+    margin-bottom: 0;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Node Details</title>
+    <link rel="icon" href="../favicon.ico" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../../static/common/css/iconfont.css">
+    <link rel="stylesheet" href="../../static/common/css/reset.css">
+    <link rel="stylesheet" href="../../static/common/css/public.css">
+    <link rel="stylesheet" href="../../static/node/css/node_details.css">
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="banner">
+        <div class="top">
+            <div class="top_left w">
+                <a href="#" class="t_one"></a>
+                <a href="#" class="t_two"></a>
+            </div>
+            <div class="top_right w">
+                <span class="tr_name">王大拿</span>
+                <div class="t_one">
+                    <ul class="personal">
+                        <img src="../../static/common/img/arrow_03.png" alt="">
+                        <a href="#" class="name">王大拿</a>
+                        <a href="#">
+                            <i class="iconfont icon-set"></i>个人设置</a>
+                        <a href="#">
+                            <i class="iconfont icon-tuichu"></i>退出登录
+                        </a>
+                    </ul>
+                </div>
+                <a href="#" class="t_two"></a>
+            </div>
+        </div>
+        <div class="w3">
+            <div class="ban_title">
+                <div class="tit">节点列表</div>
+                <div class="describe">节点列表整体的一段描述</div>
+                <div class="list">系统中有
+                    <div>
+                        <span>3个节点</span>
+                    </div>
+                    <div>
+                        <span>1个在线</span>
+                    </div>
+                    <div>
+                        <span>2个离线</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="../../static/node/img/node_banner_01.png" alt="">
+    </div>
+    <!-- banner-end -->
+
+    <!-- w3-start -->
+    <div class="w3">
+        <div class="title">
+            <a href="#">返回节点列表</a>
+        </div>
+
+        <div class="box">
+            <div class="box_title">
+                <i class="iconfont icon-navicon-lcpz"></i>
+                <span>这里书写展示节点的名称NFV1</span>
+            </div>
+            <div class="line"></div>
+            <div class="box_content">
+                <table>
+                    <tr>
+                        <td>节点登录账户：</td>
+                        <td>root</td>
+                        <td></td>
+                        <td>是否离线：</td>
+                        <td>
+                            <span class="color_blue">True</span>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>节点IP地址：</td>
+                        <td>192.168.112.221</td>
+                        <td></td>
+                        <td>离线原因：</td>
+                        <td>
+                            None
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>节点架构：</td>
+                        <td>Linux(amd64)</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- w3-end -->
+
+    <!-- 轮播的echarts图-start -->
+    <div class="w2 slave">
+        <div class="nc_top">
+            <a href="#">Slave节点列表信息</a>
+        </div>
+        <div class="ech_btn">
+            <span class="echbtn_one"></span>
+            <span></span>
+        </div>
+        <div class="salve_switch">
+            <ul class="clearfix">
+                <li style="background-color: pink;">
+                    <div id="slave1">1</div>
+                </li>
+                <li style="background-color: red;">
+                    <div id="slave2">2</div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 左右点击切换按钮 -->
+        <div class="ech_left">
+            <i class="iconfont icon-zuojiantou"></i>
+        </div>
+        <div class="ech_right">
+            <i class="iconfont icon-youjiantou"></i>
+        </div>
+    </div>
+
+    <div class="w2 slave2">
+        <div class="nc_top">
+            <a href="#">Slave节点列表信息</a>
+        </div>
+        <div class="ech_btn2">
+            <span class="echbtn_one"></span>
+            <span></span>
+        </div>
+        <div class="salve_switch">
+            <ul>
+                <li style="background-color: beige;">
+                    <div id="slave3">1</div>
+                </li>
+                <li style="background-color: aquamarine;">
+                    <div id="slave4">2</div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 左右点击切换按钮 -->
+        <div class="ech_left">
+            <i class="iconfont icon-zuojiantou"></i>
+        </div>
+        <div class="ech_right">
+            <i class="iconfont icon-youjiantou"></i>
+        </div>
+    </div>
+    <!-- 轮播的echarts图-end -->
+
+    <footer>
+        <div class="one">
+            <a href="#">关于我们</a>
+            <a href="#">联系我们</a>
+            <a href="#">使用条款</a>
+            <a href="#">隐私政策</a>
+        </div>
+        <div class="two">
+            <a href="">©2018 中国移动通信研究院版权所有 京公网安备 11010801000158</a>
+        </div>
+    </footer>
+    <script src="../../static/common/js/jquery-1.12.4.min.js"></script>
+    <script src="../../static/common/js/echarts.js"></script>
+    <script src="../../static/common/js/index.js"></script>
+    <script src="../../static/node/js/node_details.js"></script>
+    <script>
+        // ech_switch('.slave .salve_switch ul li', '.ech_btn span', '.slave .salve_switch ul', '.slave .ech_right', '.slave .ech_left', '.slave') // echarth图片切换-工作流列表信息
+        // ech_switch('.slave2 .salve_switch ul li', '.ech_btn2 span', '.slave2 .salve_switch ul', '.slave2 .ech_right', '.slave2 .ech_left', '.slave2') // echarth图片切换-工作流列表信息
+    </script>
+</body>
+
+</html>

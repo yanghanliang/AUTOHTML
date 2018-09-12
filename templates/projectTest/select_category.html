@@ -1,0 +1,111 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>New NFV</title>
+    <link rel="icon" href="../favicon.ico" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../../static/common/css/iconfont.css">
+    <link rel="stylesheet" href="../../static/common/css/reset.css">
+    <link rel="stylesheet" href="../../static/common/css/public.css">
+    <link rel="stylesheet" href="../../static/projectTest/css/select_category.css">
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="banner">
+        <div class="top">
+            <div class="top_left w">
+                <a href="#" class="t_one"></a>
+            </div>
+            <div class="top_right w">
+                <span class="tr_name">王大拿</span>
+                <div class="t_one">
+                    <ul class="personal">
+                        <img src="../../static/common/img/arrow_03.png" alt="">
+                        <a href="#" class="name">王大拿</a>
+                        <a href="#">
+                            <i class="iconfont icon-set"></i>个人设置</a>
+                        <a href="#">
+                            <i class="iconfont icon-tuichu"></i>退出登录
+                        </a>
+                </div>
+                <a href="#" class="t_two"></a>
+            </div>
+        </div>
+        <div class="w3">
+            <div class="ban_title">
+                <div class="tit">任务列表</div>
+                <div class="describe">任务列表整体的一段描述</div>
+                <div class="list">包含了有
+                    <div>
+                        <span>1个任务</span>
+                    </div>
+                    <div>
+                        <span>1个blue</span>
+                    </div>
+                    <div>
+                        <span>1个red</span>
+                    </div>
+                    <div>
+                        <span>1个未创建</span>
+                    </div>
+                    <div>
+                        <span>1个待创建</span>
+                    </div>
+                    <div>
+                        <span>1个其他状态</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="../../static/common/img/bios_banner_01.gif" alt="">
+    </div>
+    <!-- banner-end -->
+
+    <!-- content-start -->
+    <div class="content w3">
+        <a href="./create_test.html" class="con_title">
+            <i class="iconfont icon-zuojiantou"></i> <span>返回上一步</span>
+        </a>
+        <div class="content_box">
+            <div class="select_test_attr">
+                <span>选择测试属性</span>
+                <a href="javascript:;" v-url="a">功能测试</a>
+                <a href="javascript:;" v-url="b">性能测试</a>
+                <a href="javascript:;" v-url="c">可靠性测试</a>
+            </div>
+            <a href="javascript:;" class="next">下一步</a>
+        </div>
+    </div>
+    <!-- content-end -->
+
+    <footer>
+        <div class="one">
+            <a href="#">关于我们</a>
+            <a href="#">联系我们</a>
+            <a href="#">使用条款</a>
+            <a href="#">隐私政策</a>
+        </div>
+        <div class="two">
+            <a href="">©2018 中国移动通信研究院版权所有 京公网安备 11010801000158</a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../static/common/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../static/common/js/index.js"></script>
+    <script>
+        var next_fn = function(that) {
+            var next = $('.content_box .next')
+            next.css('opacity', 1)
+            var id = $(that).attr('v-url') // 获取当前点击的参数
+            next.click(function() {
+                location.href = './new_test.html?id=' + id // 携带参数跳转页面
+            })
+        }
+
+        exclusivity('.select_test_attr a', next_fn)
+        
+    </script>
+</body>
+
+</html>

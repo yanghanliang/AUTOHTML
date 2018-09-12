@@ -1,0 +1,67 @@
+.content .con_title {
+    display: block;
+    margin: 20px 0;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.content .con_title i {
+    font-size: 24px;
+    margin-right: -7px;
+    vertical-align: middle;
+}
+
+.content .content_box {
+    width: 1160px;
+    height: 690px;
+    padding-top: 30px;
+    border-radius: 4px;
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px 0px rgba(46, 46, 46, 0.05);
+}
+
+/* select_test_attr-start */
+.select_test_attr {
+    margin-top: 84px;
+    margin-left: 223px;
+}
+
+.select_test_attr span {
+    color: #666666;
+    font-size: 18px;
+    margin-right: 50px;
+}
+
+.select_test_attr a {
+    width: 120px;
+    height: 40px;
+    color: #333;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+	border-radius: 4px;
+    display: inline-block;
+	background-color: #f7f8f9;
+}
+
+.select_test_attr a.hover {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.content_box .next {
+    left: 50%;
+    width: 120px;
+    height: 40px;
+    opacity: 0.6;
+    color: #fff;
+    line-height: 40px;
+    margin-top: 142px;
+	border-radius: 4px;
+    position: absolute;
+    text-align: center;
+	background-color: #007bff;
+    transform: translateX(-50%);
+}
+/* select_test_attr-end */

@@ -1,0 +1,436 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>New NFV</title>
+    <link rel="icon" href="../favicon.ico" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../../static/common/css/iconfont.css">
+    <link rel="stylesheet" href="../../static/common/css/reset.css">
+    <link rel="stylesheet" href="../../static/common/css/public.css">
+    <link rel="stylesheet" href="../../static/task/css/new_nfv.css">
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="banner">
+        <div class="top">
+            <div class="top_left w">
+                <a href="#" class="t_one"></a>
+            </div>
+            <div class="top_right w">
+                <span class="tr_name">王大拿</span>
+                <div class="t_one">
+                    <ul class="personal">
+                        <img src="../../static/common/img/arrow_03.png" alt="">
+                        <a href="#" class="name">王大拿</a>
+                        <a href="#">
+                            <i class="iconfont icon-set"></i>个人设置</a>
+                        <a href="#">
+                            <i class="iconfont icon-tuichu"></i>退出登录
+                        </a>
+                </div>
+                <a href="#" class="t_two"></a>
+            </div>
+        </div>
+        <div class="w3">
+            <div class="ban_title">
+                <div class="tit">任务列表</div>
+                <div class="describe">任务列表整体的一段描述</div>
+                <div class="list">包含了有
+                    <div>
+                        <span>1个任务</span>
+                    </div>
+                    <div>
+                        <span>1个blue</span>
+                    </div>
+                    <div>
+                        <span>1个red</span>
+                    </div>
+                    <div>
+                        <span>1个未创建</span>
+                    </div>
+                    <div>
+                        <span>1个待创建</span>
+                    </div>
+                    <div>
+                        <span>1个其他状态</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="../../static/common/img/bios_banner_01.gif" alt="">
+    </div>
+    <!-- banner-end -->
+
+    <!-- content-start -->
+    <div class="content w3">
+        <a href="./create_test.html" class="con_title">
+            返回任务列表
+        </a>
+        <div class="form">
+            <a href="./select_category.html" class="con_title clear_top">
+                <i class="iconfont icon-zuojiantou"></i> <span>返回上一步</span>
+            </a>
+            <form action="">
+                <table>
+                    <tr>
+                        <td>任务类型</td>
+                        <td>
+                            <div class="input_box" style="background-color: #f8f8f8;">BIOS</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>项目名称</td>
+                        <td class="td_option project">
+                            <div class="input_box">
+                                <span>CMCC_NFVi_Test</span>
+                                <img src="../../static/common/img/bottom.png" alt="">
+                            </div>
+                            <div class="fixed_select">
+                                <span>CMCC_NFVi_Test1</span>
+                                <span>CMCC_NFVi_Test2</span>
+                                <span>CMCC_NFVi_Test3</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>节点名称</td>
+                        <td class="td_option node">
+                            <div class="input_box">
+                                <span>NFV_test_node</span>
+                                <img src="../../static/common/img/bottom.png" alt="">
+                            </div>
+                            <div class="fixed_select">
+                                <span>NFV_test_node1</span>
+                                <span>NFV_test_node2</span>
+                                <span>NFV_test_node3</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>任务名称</td>
+                        <td>
+                            <div class="form_input">
+                                <input type="text" placeholder="任务名称">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_text">任务描述</td>
+                        <td>
+                            <textarea name="" class="text"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_file">YAML Case文件名称 </td>
+                        <td>
+                            <div class="file_box">
+                                <div class="file">
+                                    选择文件
+                                    <input type="file">
+                                </div>
+                                <div class="file_info">
+                                    <div class="info_box">
+                                        cmri_test_*.yml；
+                                        <img src="../../static/common/img/close.min_01.png" alt="">
+                                    </div>
+                                    <div class="info_box">
+                                        cmri_test_*.yml；
+                                        <img src="../../static/common/img/close.min_01.png" alt="">
+                                    </div>
+                                    <div class="info_box">
+                                        cmri_test_*.yml；
+                                        <img src="../../static/common/img/close.min_01.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>NFV测试重复次数</td>
+                        <td>
+                            <div class="input_box">BIOS</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_text">邮件收件人列表</td>
+                        <td>
+                            <textarea name="" class="text"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="btn">
+                                <button class="close2">取消</button>
+                                <button>保存</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <!-- content-end -->
+
+    <!-- popup-start -->
+    <div class="add_pop">
+        <div class="pop_box clearfix">
+            <div class="pop_title">
+                选择测试类目板块
+            </div>
+            <div class="pop_line"></div>
+            <div class="function">
+                <!-- <i>选择功能：</i>
+                <span class="hover"> Hyprevi功能sor</span>
+                <span>VIM功能</span>
+                <span>虚拟机性能测试</span>
+                <span>虚拟层可靠性要求</span>
+                <span>设备兼容性要求</span>
+                <span>虚拟层运维管理要求</span> -->
+            </div>
+            <div class="category">
+                <!-- 一级分类-start -->
+                <div class="sele_box">
+                    <div class="sele_top">
+                        <i class="iconfont icon-yooxi"></i>
+                    </div>
+                    <div class="min_sele">
+                        <form action="">
+                            <!-- <div class="all_sele">
+                                <input type="checkbox" id="all" />
+                                <label for="all">全选</label>
+                            </div>
+                            <div class="min_line"></div>
+                            <div class="pid_box"> -->
+                            <!-- <div class="box">
+                                    <input type="checkbox" name="" id="check1">
+                                    <label for="check1">
+                                        <span>测试类标题第一条，也就是第一层级</span>
+                                    </label>
+                                </div>
+                                <div class="box">
+                                    <input type="checkbox" name="" id="check2">
+                                    <label for="check2">
+                                        <span>测试类标题第一条，也就是第一层级</span>
+                                    </label>
+                                </div>
+                                <div class="box">
+                                    <input type="checkbox" name="" id="check3">
+                                    <label for="check3">
+                                        <span>测试类标题第一条，也就是第一层级</span>
+                                    </label>
+                                </div>
+                                <div class="box">
+                                    <input type="checkbox" name="" id="check4">
+                                    <label for="check4">
+                                        <span>测试类标题第一条，也就是第一层级</span>
+                                    </label>
+                                </div>
+                                <div class="box">
+                                    <input type="checkbox" name="" id="check5">
+                                    <label for="check5">
+                                        <span>测试类标题第一条，也就是第一层级</span>
+                                    </label>
+                                </div>
+                                <div class="box">
+                                    <input type="checkbox" name="" id="check6">
+                                    <label for="check6">
+                                        <span>测试类标题第一条，也就是第一层级</span>
+                                    </label>
+                                </div>
+                                <div class="box">
+                                    <input type="checkbox" name="" id="check7">
+                                    <label for="check7">
+                                        <span>测试类标题第一条，也就是第一层级</span>
+                                    </label>
+                                </div>
+                                <div class="box">
+                                    <input type="checkbox" name="" id="check8">
+                                    <label for="check8">
+                                        <span>测试类标题第一条，也就是第一层级</span>
+                                    </label>
+                                </div>
+                                <div class="box">
+                                    <input type="checkbox" name="" id="check9">
+                                    <label for="check9">
+                                        <span>测试类标题第一条，也就是第一层级</span>
+                                    </label>
+                                </div>
+                                <div class="box">
+                                    <input type="checkbox" name="" id="check10">
+                                    <label for="check10">
+                                        <span>测试类标题第一条，也就是第一层级</span>
+                                    </label>
+                                </div>
+                                <div class="box">
+                                    <input type="checkbox" name="" id="check11">
+                                    <label for="check11">
+                                        <span>测试类标题第一条，也就是第一层级</span>
+                                    </label>
+                                </div>
+                                <div class="box">
+                                    <input type="checkbox" name="" id="check12">
+                                    <label for="check12">
+                                        <span>测试类标题第一条，也就是第一层级</span>
+                                    </label>
+                                </div>
+                                <div class="box">
+                                    <input type="checkbox" name="" id="check13">
+                                    <label for="check13">
+                                        <span>测试类标题第一条，也就是第一层级</span>
+                                    </label>
+                                </div> -->
+                            <!-- </div> -->
+                        </form>
+                    </div>
+                    <div class="sele_bottom">
+                        <i class="iconfont icon-caretbottom"></i>
+                    </div>
+                </div>
+                <!-- 一级分类-end -->
+
+                <!-- 二级分类-start -->
+                <div class="sele_box2">
+                    <div class="sele_top">
+                        <i class="iconfont icon-yooxi"></i>
+                    </div>
+                    <div class="min_sele">
+                        <form action="">
+                            <div class="all_sele">
+                                <input type="checkbox" id="pid2" />
+                                <label for="pid2">全选</label>
+                            </div>
+                            <div class="min_line"></div>
+                            <div class="pid_box">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="sele_bottom">
+                        <i class="iconfont icon-caretbottom"></i>
+                    </div>
+                    <div class="triangle">
+                        <img src="../../static/common/img/triangle_01.png" alt="">
+                    </div>
+                </div>
+                <!-- 二级分类-end -->
+
+                <!-- 三级分类-start -->
+                <div class="sele_box3">
+                    <div class="sele_top">
+                        <i class="iconfont icon-yooxi"></i>
+                    </div>
+                    <div class="min_sele">
+                        <form action="">
+                            <div class="all_sele">
+                                <input type="checkbox" id="pid3" />
+                                <label for="pid3">全选</label>
+                            </div>
+                            <div class="min_line"></div>
+                            <div class="pid_box">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="sele_bottom">
+                        <i class="iconfont icon-caretbottom"></i>
+                    </div>
+                    <div class="triangle">
+                        <img src="../../static/common/img/triangle_01.png" alt="">
+                    </div>
+                </div>
+                <!-- 三级分类-end -->
+            </div>
+
+            <div class="btn">
+                <button class="close2">取消</button>
+                <button class="confirm">保存</button>
+            </div>
+        </div>
+    </div>
+    <!-- popup-end -->
+
+    <footer>
+        <div class="one">
+            <a href="#">关于我们</a>
+            <a href="#">联系我们</a>
+            <a href="#">使用条款</a>
+            <a href="#">隐私政策</a>
+        </div>
+        <div class="two">
+            <a href="">©2018 中国移动通信研究院版权所有 京公网安备 11010801000158</a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../static/common/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../static/task/js/template.js"></script>
+    <script type="text/javascript" src="../../static/common/js/index.js"></script>
+    <script type="text/javascript" src="../../static/task/js/get_data.js"></script>
+    <script type="text/javascript" src="../../static/task/js/new_nfv.js"></script>
+
+    <!-- 选择测试类目板块-start -->
+    <script type="text/template" id="select_model">
+        <i>选择功能：</i>
+        {{ each models as value i }} {{ if i === 0 }}
+        <span class="{{ value.class ? value.class : 'sign' }}" v-url="{{ value.pid }}">
+            {{ value.title }}
+        </span>
+        {{ else }}
+        <span v-url="{{ value.pid }}" class="{{ value.class }}">
+            {{ value.title }}
+        </span>
+        {{ /if }} {{ /each }}
+    </script>
+    <!-- 选择测试类目板块-end -->
+
+    <!-- 一级分类-start -->
+    <script type="text/template" id="pid_a">
+        {{ each data as value i }} {{ if i === 0 }}
+        <div class="all_sele">
+            <input type="checkbox" record-id="{{ value.record_id }}" v-pid="{{ value.record_id }}" id="{{ 'for' + value.record_id }}"
+                class="{{ value.all_class ? value.all_class : value.class }}" />
+            <label for="{{ 'for' + value.record_id }}">全选</label>
+        </div>
+        <div class="min_line"></div>
+        <div class="pid_box">
+            <div class="ver_line"></div>
+            {{ /if }}
+
+            <div class="box">
+                <input type="checkbox" record-id="{{ value.record_id }}" id="{{ value.pid }}" class="{{ value.class }}">
+                <label for="{{ value.pid }}">
+                </label>
+                <span v-url="{{ value.pid }}">
+                    {{ value.title }}
+                </span>
+            </div>
+            {{ /each }}
+        </div>
+    </script>
+    <!-- 一级分类-end -->
+
+    <!-- 二级分类-start -->
+    <script type="text/template" id="pid_b">
+        {{ each data as value i }} {{ if i === 0 }}
+        <div class="all_sele">
+            <input type="checkbox" record-id="{{ value.record_id }}" v-pid="{{ value.record_id }}" id="{{ 'for' + value.record_id }}"
+                class="{{ value.all_class ? value.all_class : value.class }}" />
+            <label for="{{ 'for' + value.record_id }}">全选</label>
+        </div>
+        <div class="min_line"></div>
+        <div class="pid_box">
+            {{ /if }}
+            <div class="box">
+                <input type="checkbox" record-id="{{ value.record_id }}" id="{{ value.pid }}" class="{{ value.class }}">
+                <label for="{{ value.pid }}">
+                </label>
+                <span v-url="{{ value.pid }}">
+                    {{ value.title }}
+                </span>
+            </div>
+            {{ /each }}
+        </div>
+    </script>
+    <!-- 二级分类-end -->
+</body>
+
+</html>

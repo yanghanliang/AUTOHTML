@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BIOS</title>
+    <link rel="icon" href="../favicon.ico" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../../static/common/css/iconfont.css">
+    <link rel="stylesheet" href="../../static/common/css/reset.css">
+    <link rel="stylesheet" href="../../static/common/css/public.css">
+    <link rel="stylesheet" href="../../static/task/css/bios.css">
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="banner">
+        <div class="top">
+            <div class="top_left w">
+                <a href="#" class="t_one"></a>
+            </div>
+            <div class="top_right w">
+                <span class="tr_name">王大拿</span>
+                <div class="t_one">
+                    <ul class="personal">
+                        <img src="../../static/common/img/arrow_03.png" alt="">
+                        <a href="#" class="name">王大拿</a>
+                        <a href="#">
+                            <i class="iconfont icon-set"></i>个人设置</a>
+                        <a href="#">
+                            <i class="iconfont icon-tuichu"></i>退出登录
+                        </a>
+                    </ul>
+                </div>
+                <a href="#" class="t_two"></a>
+            </div>
+        </div>
+        <div class="w3">
+            <div class="ban_title">
+                <div class="tit">任务列表</div>
+                <div class="describe">任务列表整体的一段描述</div>
+                <div class="list">包含了有
+                    <div>
+                        <span>1个任务</span>
+                    </div>
+                    <div>
+                        <span>1个blue</span>
+                    </div>
+                    <div>
+                        <span>1个red</span>
+                    </div>
+                    <div>
+                        <span>1个未创建</span>
+                    </div>
+                    <div>
+                        <span>1个待创建</span>
+                    </div>
+                    <div>
+                        <span>1个其他状态</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="../../static/common/img/bios_banner_01.gif" alt="">
+    </div>
+    <!-- banner-end -->
+
+    <!-- title -->
+    <div class="title">
+        <div class="tab_switch">
+            <!-- Configuration task 简写 ct 配置任务 -->
+            <div class="tabswit_ct" v-url="/login">
+                <ul class="hover">
+                    <li>
+                        <i class="iconfont icon-navicon-lcpz"></i>
+                    </li>
+                    <li>
+                        <span>BIOS配置任务</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tabswit_ct" v-url="/regin">
+                <ul>
+                    <li>
+                        <i class="iconfont icon-vdcwangluoico"></i>
+                    </li>
+                    <li>
+                        <span>网络配置任务</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- content-start -->
+    <div class="content">
+        <div class="w2">
+            <!-- table -->
+            <div class="pack">
+                <div class="tab_top clearfix">
+                    <div class="add">
+                        <button class="clearfix">
+                            <i class="iconfont icon-jia"></i>
+                            <span>创建新任务</span>
+                        </button>
+                    </div>
+                    <div>
+                        <div class="select">
+                            <span>全部任务</span>
+                            <img src="../../static/common/img/bottom.png" alt="">
+                        </div>
+                        <div class="options">
+                            <span>未创建</span>
+                            <span>待创建</span>
+                            <span>red</span>
+                            <span>built</span>
+                            <span>true</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table_show">
+                    <table rules="all" class="table">
+                        <tr class="table_th">
+                            <th>任务名称</th>
+                            <th>所属项目</th>
+                            <th>任务描述</th>
+                            <th>类型</th>
+                            <th>状态</th>
+                            <th>是否
+                                <br />可构建</th>
+                            <th>是否在
+                                <br />列队中</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr>
+                            <td>NFV test1</td>
+                            <td>China Mobile NFV</td>
+                            <td>NFV function test</td>
+                            <td>NFVT</td>
+                            <td>
+                                <span class="color_red">notbuilt</span>
+                            </td>
+                            <td>
+                                <span class="color_blue">True</span>
+                            </td>
+                            <td>
+                                <span class="color_green">False</span>
+                            </td>
+                            <td>
+                                <button class="iconfont icon-zuzhijiagou-">
+                                    <div class="build">
+                                        Build
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-shanchu">
+                                    <div class="delete">
+                                        Delete
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-queue">
+                                    <div class="queue">
+                                        Cencel queue
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <a href="#">详情</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>NFV test1</td>
+                            <td>China Mobile NFV</td>
+                            <td>NFV function test</td>
+                            <td>NFVT</td>
+                            <td>
+                                <span class="color_red">notbuilt</span>
+                            </td>
+                            <td>
+                                <span class="color_blue">True</span>
+                            </td>
+                            <td>
+                                <span class="color_green">False</span>
+                            </td>
+                            <td>
+                                <button class="iconfont icon-zuzhijiagou-">
+                                    <div class="build">
+                                        Build
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-shanchu">
+                                    <div class="delete">
+                                        Delete
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-queue">
+                                    <div class="queue">
+                                        Cencel queue
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <a href="#">详情</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>NFV test1</td>
+                            <td>China Mobile NFV</td>
+                            <td>NFV function test</td>
+                            <td>NFVT</td>
+                            <td>
+                                <span class="color_red">notbuilt</span>
+                            </td>
+                            <td>
+                                <span class="color_blue">True</span>
+                            </td>
+                            <td>
+                                <span class="color_green">False</span>
+                            </td>
+                            <td>
+                                <button class="iconfont icon-zuzhijiagou-">
+                                    <div class="build">
+                                        Build
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-shanchu">
+                                    <div class="delete">
+                                        Delete
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-queue">
+                                    <div class="queue">
+                                        Cencel queue
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <a href="#">详情</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>NFV test1</td>
+                            <td>China Mobile NFV</td>
+                            <td>NFV function test</td>
+                            <td>NFVT</td>
+                            <td>
+                                <span class="color_red">notbuilt</span>
+                            </td>
+                            <td>
+                                <span class="color_blue">True</span>
+                            </td>
+                            <td>
+                                <span class="color_green">False</span>
+                            </td>
+                            <td>
+                                <button class="iconfont icon-zuzhijiagou-">
+                                    <div class="build">
+                                        Build
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-shanchu">
+                                    <div class="delete">
+                                        Delete
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-queue">
+                                    <div class="queue">
+                                        Cencel queue
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <a href="#">详情</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>NFV test1</td>
+                            <td>China Mobile NFV</td>
+                            <td>NFV function test</td>
+                            <td>NFVT</td>
+                            <td>
+                                <span class="color_red">notbuilt</span>
+                            </td>
+                            <td>
+                                <span class="color_blue">True</span>
+                            </td>
+                            <td>
+                                <span class="color_green">False</span>
+                            </td>
+                            <td>
+                                <button class="iconfont icon-zuzhijiagou-">
+                                    <div class="build">
+                                        Build
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-shanchu">
+                                    <div class="delete">
+                                        Delete
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-queue">
+                                    <div class="queue">
+                                        Cencel queue
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <a href="#">详情</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>NFV test1</td>
+                            <td>China Mobile NFV</td>
+                            <td>NFV function test</td>
+                            <td>NFVT</td>
+                            <td>
+                                <span class="color_red">notbuilt</span>
+                            </td>
+                            <td>
+                                <span class="color_blue">True</span>
+                            </td>
+                            <td>
+                                <span class="color_green">False</span>
+                            </td>
+                            <td>
+                                <button class="iconfont icon-zuzhijiagou-">
+                                    <div class="build">
+                                        Build
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-shanchu">
+                                    <div class="delete">
+                                        Delete
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-queue">
+                                    <div class="queue">
+                                        Cencel queue
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <a href="#">详情</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>NFV test1</td>
+                            <td>China Mobile NFV</td>
+                            <td>NFV function test</td>
+                            <td>NFVT</td>
+                            <td>
+                                <span class="color_red">notbuilt</span>
+                            </td>
+                            <td>
+                                <span class="color_blue">True</span>
+                            </td>
+                            <td>
+                                <span class="color_green">False</span>
+                            </td>
+                            <td>
+                                <button class="iconfont icon-zuzhijiagou-">
+                                    <div class="build">
+                                        Build
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-shanchu">
+                                    <div class="delete">
+                                        Delete
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-queue">
+                                    <div class="queue">
+                                        Cencel queue
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <a href="#">详情</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 分页 -->
+            <div class="page clearfix">
+                <div class="page_left">上一页</div>
+                <div class="page_content">
+                    <span class="hover">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                    <span>...</span>
+                    <span>12</span>
+                </div>
+                <div class="page_right">下一页</div>
+            </div>
+        </div>
+
+        <div class="w2" style="display: none;">
+            <!-- table -->
+            <div class="pack">
+                <div class="tab_top clearfix">
+                    <div class="add">
+                        <button class="clearfix">
+                            <i class="iconfont icon-jia"></i>
+                            <span>创建新任务</span>
+                        </button>
+                    </div>
+                    <div>
+                        <div class="select">
+                            <span>全部任务</span>
+                            <img src="../../static/common/img/bottom.png" alt="">
+                        </div>
+                        <div class="options">
+                            <span>未创建</span>
+                            <span>待创建</span>
+                            <span>red</span>
+                            <span>built</span>
+                            <span>true</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table_show">
+                    <table rules="all" class="table">
+                        <tr class="table_th">
+                            <th>任务名称</th>
+                            <th>所属项目</th>
+                            <th>任务描述</th>
+                            <th>类型</th>
+                            <th>状态</th>
+                            <th>是否
+                                <br />可构建</th>
+                            <th>是否在
+                                <br />列队中</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr>
+                            <td>NFV test1</td>
+                            <td>China Mobile NFV</td>
+                            <td>NFV function test</td>
+                            <td>NFVT</td>
+                            <td>
+                                <span class="color_red">notbuilt</span>
+                            </td>
+                            <td>
+                                <span class="color_blue">True</span>
+                            </td>
+                            <td>
+                                <span class="color_green">False</span>
+                            </td>
+                            <td>
+                                <button class="iconfont icon-zuzhijiagou-">
+                                    <div class="build">
+                                        Build
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-shanchu">
+                                    <div class="delete">
+                                        Delete
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-queue">
+                                    <div class="queue">
+                                        Cencel queue
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <a href="#">详情</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>NFV test1</td>
+                            <td>China Mobile NFV</td>
+                            <td>NFV function test</td>
+                            <td>NFVT</td>
+                            <td>
+                                <span class="color_red">notbuilt</span>
+                            </td>
+                            <td>
+                                <span class="color_blue">True</span>
+                            </td>
+                            <td>
+                                <span class="color_green">False</span>
+                            </td>
+                            <td>
+                                <button class="iconfont icon-zuzhijiagou-">
+                                    <div class="build">
+                                        Build
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-shanchu">
+                                    <div class="delete">
+                                        Delete
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-queue">
+                                    <div class="queue">
+                                        Cencel queue
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <a href="#">详情</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>NFV test1</td>
+                            <td>China Mobile NFV</td>
+                            <td>NFV function test</td>
+                            <td>NFVT</td>
+                            <td>
+                                <span class="color_red">notbuilt</span>
+                            </td>
+                            <td>
+                                <span class="color_blue">True</span>
+                            </td>
+                            <td>
+                                <span class="color_green">False</span>
+                            </td>
+                            <td>
+                                <button class="iconfont icon-zuzhijiagou-">
+                                    <div class="build">
+                                        Build
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-shanchu">
+                                    <div class="delete">
+                                        Delete
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-queue">
+                                    <div class="queue">
+                                        Cencel queue
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <a href="#">详情</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>NFV test1</td>
+                            <td>China Mobile NFV</td>
+                            <td>NFV function test</td>
+                            <td>NFVT</td>
+                            <td>
+                                <span class="color_red">notbuilt</span>
+                            </td>
+                            <td>
+                                <span class="color_blue">True</span>
+                            </td>
+                            <td>
+                                <span class="color_green">False</span>
+                            </td>
+                            <td>
+                                <button class="iconfont icon-zuzhijiagou-">
+                                    <div class="build">
+                                        Build
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-shanchu">
+                                    <div class="delete">
+                                        Delete
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-queue">
+                                    <div class="queue">
+                                        Cencel queue
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <a href="#">详情</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>NFV test1</td>
+                            <td>China Mobile NFV</td>
+                            <td>NFV function test</td>
+                            <td>NFVT</td>
+                            <td>
+                                <span class="color_red">notbuilt</span>
+                            </td>
+                            <td>
+                                <span class="color_blue">True</span>
+                            </td>
+                            <td>
+                                <span class="color_green">False</span>
+                            </td>
+                            <td>
+                                <button class="iconfont icon-zuzhijiagou-">
+                                    <div class="build">
+                                        Build
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-shanchu">
+                                    <div class="delete">
+                                        Delete
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-queue">
+                                    <div class="queue">
+                                        Cencel queue
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <a href="#">详情</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>NFV test1</td>
+                            <td>China Mobile NFV</td>
+                            <td>NFV function test</td>
+                            <td>NFVT</td>
+                            <td>
+                                <span class="color_red">notbuilt</span>
+                            </td>
+                            <td>
+                                <span class="color_blue">True</span>
+                            </td>
+                            <td>
+                                <span class="color_green">False</span>
+                            </td>
+                            <td>
+                                <button class="iconfont icon-zuzhijiagou-">
+                                    <div class="build">
+                                        Build
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-shanchu">
+                                    <div class="delete">
+                                        Delete
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-queue">
+                                    <div class="queue">
+                                        Cencel queue
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <a href="#">详情</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>NFV test1</td>
+                            <td>China Mobile NFV</td>
+                            <td>NFV function test</td>
+                            <td>NFVT</td>
+                            <td>
+                                <span class="color_red">notbuilt</span>
+                            </td>
+                            <td>
+                                <span class="color_blue">True</span>
+                            </td>
+                            <td>
+                                <span class="color_green">False</span>
+                            </td>
+                            <td>
+                                <button class="iconfont icon-zuzhijiagou-">
+                                    <div class="build">
+                                        Build
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-shanchu">
+                                    <div class="delete">
+                                        Delete
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="iconfont icon-queue">
+                                    <div class="queue">
+                                        Cencel queue
+                                        <div>
+                                            <i class="iconfont icon-jiantou1"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <a href="#">详情</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 分页 -->
+            <div class="page clearfix">
+                <div class="page_left">上一页</div>
+                <div class="page_content">
+                    <span class="hover">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                    <span>...</span>
+                    <span>12</span>
+                </div>
+                <div class="page_right">下一页</div>
+            </div>
+        </div>
+    </div>
+    <!-- content-end -->
+
+    <!-- echarth-satrt -->
+    <div class="echarth">
+        <div class="w2">
+            <div class="nc_top">
+                <a href="#">工作流任务数目统计信息</a>
+            </div>
+            <div class="ech_btn">
+                <span class="echbtn_one"></span>
+                <span></span>
+            </div>
+            <div class="ech_switch">
+                <ul>
+                    <li>
+                        <div id="main"></div>
+                        <div class="title">
+                            <div class="tit_top">工作流任务数目统计信息</div>
+                            <div class="tit_bottom">各个任务类型所占比例信息统计</div>
+                        </div>
+                        <!-- legend-start -->
+                        <div class="legend">
+                            <div class="bios_icon">
+                                <div></div>
+                                <span>BIOS</span>
+                            </div>
+                            <div class="netWork_icon">
+                                <div></div>
+                                <span>NETwork</span>
+                            </div>
+                            <div class="nfvTest_icon">
+                                <div></div>
+                                <span>NFV Test</span>
+                            </div>
+                            <div class="Others_icon">
+                                <div></div>
+                                <span>Others</span>
+                            </div>
+                        </div>
+                        <!-- legend-end -->
+                    </li>
+                    <li>
+                        <div id="main2"></div>
+                        <div class="title">
+                            <div class="tit_top">工作流状态统计信息</div>
+                            <div class="tit_bottom">涵盖全国各个地方省会城市，节点分布
+                                <br />数据展示</div>
+                        </div>
+                        <!-- legend-start -->
+                        <div class="legend">
+                            <div class="bios_icon">
+                                <div></div>
+                                <span>success</span>
+                            </div>
+                            <div class="netWork_icon">
+                                <div></div>
+                                <span>failure</span>
+                            </div>
+                            <div class="nfvTest_icon">
+                                <div></div>
+                                <span>building</span>
+                            </div>
+                            <div class="Others_icon">
+                                <div></div>
+                                <span>notbuilt</span>
+                            </div>
+                        </div>
+                        <!-- legend-end -->
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 左右点击切换按钮 -->
+            <div class="ech_left">
+                <i class="iconfont icon-zuojiantou"></i>
+            </div>
+            <div class="ech_right">
+                <i class="iconfont icon-youjiantou"></i>
+            </div>
+
+            <div class="contact">
+                <i class="iconfont icon-ai-message"></i>
+            </div>
+        </div>
+    </div>
+    <!-- echarth-end -->
+
+    <!-- 创建BIOS配置任务的弹窗-start -->
+    <div class="add_pop">
+        <div class="popup">
+            <div class="iconfont icon-guanbi1 close"></div>
+            <div class="popup_title">
+                创建BIOS配置任务
+            </div>
+            <div class="pop_line"></div>
+            <div class="form">
+                <form action="">
+                    <table class="pop_table">
+                        <tr>
+                            <td>任务类型</td>
+                            <td>
+                                <div class="input_box" style="background-color: #f8f8f8;">BIOS</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>项目名称</td>
+                            <td class="td_option project">
+                                <div>
+                                    <div class="input_box">
+                                        <span>CMCC_NFVi_Test</span>
+                                        <img src="../../static/common/img/bottom.png" alt="">
+                                    </div>
+                                    <div class="fixed_select">
+                                        <span>CMCC_NFVi_Test1</span>
+                                        <span>CMCC_NFVi_Test2</span>
+                                        <span>CMCC_NFVi_Test3</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>节点名称</td>
+                            <td class="td_option node">
+                                <div>
+                                    <div class="input_box">
+                                        <span>NFV_test_node</span>
+                                        <img src="../../static/common/img/bottom.png" alt="">
+                                    </div>
+                                    <div class="fixed_select">
+                                        <span>NFV_test_node1</span>
+                                        <span>NFV_test_node2</span>
+                                        <span>NFV_test_node3</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>任务名称</td>
+                            <td>
+                                <div class="form_input">
+                                    <input type="text" placeholder="任务名称">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>任务描述</td>
+                            <td>
+                                <textarea name="" class="text"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>上传BMC信息文件</td>
+                            <td>
+                                <div class="file_box">
+                                    <div class="file">
+                                        选择文件
+                                        <input type="file">
+                                    </div>
+                                    <div class="file_info">已上传：
+                                        <span>这个是上传成功的BMC文件名称.doc</span>
+                                        <i class="iconfont icon-guanbi1"></i>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div class="btn">
+                                    <button class="close2">取消</button>
+                                    <button class="close2">保存</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 创建BIOS配置任务的弹窗-end -->
+
+    <footer>
+        <div class="one">
+            <a href="#">关于我们</a>
+            <a href="#">联系我们</a>
+            <a href="#">使用条款</a>
+            <a href="#">隐私政策</a>
+        </div>
+        <div class="two">
+            <a href="">©2018 中国移动通信研究院版权所有 京公网安备 11010801000158</a>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="../../static/common/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../static/common/js/echarts.js"></script>
+    <script type="text/javascript" src="../../static/common/js/my-echarts.js"></script>
+    <script type="text/javascript" src="../../static/common/js/index.js"></script>
+    <script type="text/javascript">
+        selectfn('.tab_top .options span', '.tab_top .select', '.tab_top .options') // 下拉选项框的方法
+        popup('.add_pop', '.add', '.close', '.close2') // 创建BIOS配置任务
+        popup_delete('.icon-shanchu', '是否确认删除该任务？', '您是否确认删除该任务，删除之后不可恢复！') // 删除任务的弹窗
+        selectfn('.project .fixed_select span', '.project .input_box', '.project .fixed_select') // 弹窗里的项目下拉选择方法
+        selectfn('.node .fixed_select span', '.node .input_box', '.node .fixed_select') // 弹窗里的节点下拉选择方法
+        bios_echSwitch('.tab_switch .tabswit_ct', '.content>.w2', '.tabswit_ct ul') // bios的tab切换
+        ech_switch() // echarth图片切换
+        task_num() // 工作流任务数目统计信息
+        task_state() // 工作流状态统计信息
+    </script>
+</body>
+
+</html>
