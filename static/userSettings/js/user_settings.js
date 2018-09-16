@@ -3,7 +3,7 @@ exclusivity('.radio span') // 单选框样式切换
 selectfn('.ll_content .time .fixed_select li', '.ll_content .time .label_right', '.ll_content .time .fixed_select') // 标签类型下拉选择
 selectfn('.ll_content .function .fixed_select li', '.ll_content .function .label_right', '.ll_content .function .fixed_select') // 标签类型下拉选择
 bios_echSwitch('.left_switch li', '.right_switch>.right', '.left_switch li') // tab切换
-popup('.dele_pop', '.mailbox .change_phone', '.dele_pop .determine', '.dele_pop .cancel') // 更换手机号
+auto.popup('.dele_pop', '.mailbox .change_phone', '.dele_pop .determine', '.dele_pop .cancel') // 更换手机号
 
 
 function cancelfn() { // 点击取消按钮

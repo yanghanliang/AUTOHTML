@@ -40,6 +40,12 @@ img,input {
 	outline-style:none; 
 }
 
+/* .form_input {
+	
+} */
+
+
+
 /*清除浮动*/
 .clearfix::after {
 	content: "";

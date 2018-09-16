@@ -273,6 +273,25 @@ input[type="checkbox"] {
 /* checkboxStyle-end */
 
 
+/* inputBox-start */
+.form_input input {
+	width: 285px;
+    height: 19px;
+    padding: 10px;
+	display: block;
+    text-align: left;
+    line-height: 19px;
+    margin-left: 15px;
+    border-radius: 4px;
+    border: solid 1px #ebebeb;
+}
+
+.form_input input:focus {
+	border-color: #007bff;
+}
+/* inputBox-end */
+
+
 /* page-start */
 .page {
     height: 27px;
@@ -505,15 +524,15 @@ input[type="checkbox"] {
 
 .popup .input_box {
 	width: 285px;
-    height: 19px;
-    line-height: 20px;
+    /* height: 19px;
+    line-height: 20px; */
     text-align: left;
     padding: 10px;
     margin-left: 15px;
 	border-radius: 4px;
     border: solid 1px #ebebeb;
-    position: relative;
-    cursor: pointer;
+    /* position: relative; */
+    /* cursor: pointer; */
 }
 
 .popup .input_box img {
@@ -526,7 +545,7 @@ input[type="checkbox"] {
     border: 1px solid #007bff;
 }
 
-.popup .form_input {
+/* .popup .form_input {
     width: 285px;
     height: 19px;
     line-height: 19px;
@@ -535,18 +554,13 @@ input[type="checkbox"] {
     margin-left: 15px;
     border-radius: 4px;
     border: solid 1px #ebebeb;
-}
+} */
 
-.popup .form_input input {
-    width: 100%;
-    height: 100%;
-}
-
-.popup .form_input input:focus {
+/* .popup .form_input input:focus {
     width: 279px;
     text-indent: 9px;
     border-left: 1px solid #007bff;
-}
+} */
 /* 
 .popup td textarea {
     margin-left: 15px;
@@ -556,13 +570,17 @@ input[type="checkbox"] {
 
 .popup .text {
     width: 278px;
-    height: 80px;
+    height: 81px;
     margin-top: 8px;
     margin-left: 14px;
     padding: 13px 14px;
     border-radius: 4px;
 	background-color: #ffffff;
 	border: solid 1px #ebebeb;
+}
+
+.popup .text:hover {
+    border-color: #007bff;
 }
 
 .popup .file input {
@@ -660,18 +678,6 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
-.popup .td_option .fixed_select span {
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-    display: block;
-    text-indent: 10px;
-}
-
-.popup .td_option .fixed_select span:hover {
-    background-color: #ebebeb;
-}
-
 /* 弹窗-end */
 
 .popup .popup_title {
@@ -722,21 +728,33 @@ input[type="checkbox"] {
 
 /* pull_select-start */
 .select {
-    height: 38px;
-    float: right;
+    /* height: 38px; */
+    /* float: right; */
     font-size: 16px;
     cursor: pointer;
     color: #007bff;
-    line-height: 38px;
+    /* line-height: 38px; */
     text-align: left;
-    text-indent: 5px;
+    /* text-indent: 5px; */
 	border-radius: 4px;
     position: relative;
-    border: solid 1px #007bff;
+    /* border: solid 1px #007bff; */
+}
+
+.select .select_box {
+    height: 34px;
+    line-height: 34px;
+    border-radius: 4px;
+    padding: 0 0 0 10px;
+    border: solid 1px #ebebeb;
 }
 
 .select i {
     font-size: 20px;
+}
+
+.select .select_box>i {
+    float: left;
 }
 
 .select img {
@@ -750,7 +768,7 @@ input[type="checkbox"] {
 	padding: 0 30px 0 4px;
 }
 
-.select .options {
+/* .select .options {
     top: 39px;
     width: 100%;
     z-index: 25;
@@ -763,7 +781,7 @@ input[type="checkbox"] {
     border: 1px solid #007bff;
     border-top: none;
     background-color: #fff;
-}
+} */
 
 .select .options span {
     height: 40px;
@@ -774,6 +792,36 @@ input[type="checkbox"] {
 }
 
 .select .options span:hover {
+    background-color: #ebebeb;
+}
+
+.select:hover .select_box {
+    border-color: #007bff;
+}
+
+.select .options_box {
+    top: -122px;
+    width: 100%;
+    z-index: 255;
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #007bff;
+    border-bottom: none;
+}
+
+.select .options_box span {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    text-indent: 10px;
+}
+
+.select .options_box span:hover {
     background-color: #ebebeb;
 }
 /* pull_select-end */

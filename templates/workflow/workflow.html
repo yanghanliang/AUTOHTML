@@ -86,12 +86,12 @@
                         </a>
                     </div>
                     <div class="select">
-                        <div class="sele_box">
+                        <div class="select_box">
                             <i class="iconfont icon-shaixuan"></i>
                             <span>过滤器</span>
                             <img src="../../static/common/img/bottom.png" alt="">
                         </div>
-                        <div class="options">
+                        <div class="options_box">
                             <span v-url="a">清除过滤器</span>
                             <span v-url="b">项目</span>
                             <span v-url="c">状态</span>
@@ -301,9 +301,23 @@
     <script type="text/javascript" src="../../static/common/js/index.js"></script>
     <script type="text/javascript" src="../../static/workflow/js/workflow.js"></script>
     <script type="text/javascript">
-        structure(4) // 构建
+        // structure(4) // 构建
+        workflow.buildingTaskWindows(4) // 构建任务的弹窗
 
-        var popup_copy = function (data, callback) { // 弹窗的方法
+        var myFn = function () {
+            var that = this
+            $('.add .create').click(function () { // 为"创建新任务的按钮"注册事件
+                that.popup(false, that.step_fn) // 调用弹窗的方法
+            })
+
+            $('table .edit').click(function () { // 为"编辑"操作注册事件
+                that.popup('编辑工作流任务', that.step_fn)
+            })
+
+            that.step_fn()
+        }
+
+        myFn.prototype.popup = function (data, callback) { // 弹窗的方法
             var datas = {
                 title: data.title ? data.title : '创建工作流任务'
             }
@@ -313,7 +327,9 @@
                     <div class="popup">\
                         <div class="iconfont icon-guanbi1 close"></div>\
                         <div class="popup_title">\
-                            '+ datas.title +'\
+                            ' +
+                datas.title +
+                '\
                         </div>\
                         <div class="pop_line"></div>\
                         <div class="form">\
@@ -336,14 +352,16 @@
                                     <tr>\
                                         <td>节点名称</td>\
                                         <td class="td_option node">\
-                                            <div class="input_box">\
-                                                <span>NFV_test_node</span>\
-                                                <img src="../../static/common/img/bottom.png" alt="">\
-                                            </div>\
-                                            <div class="fixed_select">\
-                                                <span>NFV_test_node1</span>\
-                                                <span>NFV_test_node2</span>\
-                                                <span>NFV_test_node3</span>\
+                                            <div class="select">\
+                                                <div class="input_box">\
+                                                    <span>NFV_test_node</span>\
+                                                    <img src="../../static/common/img/bottom.png" alt="">\
+                                                </div>\
+                                                <div class="options_box">\
+                                                    <span>NFV_test_node1</span>\
+                                                    <span>NFV_test_node2</span>\
+                                                    <span>NFV_test_node3</span>\
+                                                </div>\
                                             </div>\
                                         </td>\
                                     </tr>\
@@ -353,12 +371,12 @@
                                             <ul class="td_box">\
                                                 <li class="a">\
                                                     <span class="serial_number">1</span>\
-                                                    <div class="custom">\
-                                                        <div class="sele_box clearfix">\
+                                                    <div class="select">\
+                                                        <div class="select_box clearfix">\
                                                             <span>NFV_test_node</span>\
                                                             <img src="../../static/common/img/bottom.png" alt="">\
                                                         </div>\
-                                                        <div class="option_box">\
+                                                        <div class="options_box">\
                                                             <span>NFV_test_node1</span>\
                                                             <span>NFV_test_node2</span>\
                                                             <span>NFV_test_node3</span>\
@@ -368,12 +386,12 @@
                                                 </li>\
                                                 <li class="b">\
                                                     <span class="serial_number">2</span>\
-                                                    <div class="custom">\
-                                                        <div class="sele_box clearfix">\
+                                                    <div class="select">\
+                                                        <div class="select_box clearfix">\
                                                             <span>NFV_test_node</span>\
                                                             <img src="../../static/common/img/bottom.png" alt="">\
                                                         </div>\
-                                                        <div class="option_box">\
+                                                        <div class="options_box">\
                                                             <span>NFV_test_node1</span>\
                                                             <span>NFV_test_node2</span>\
                                                             <span>NFV_test_node3</span>\
@@ -383,12 +401,12 @@
                                                 </li>\
                                                 <li class="c">\
                                                     <span class="serial_number">3</span>\
-                                                    <div class="custom">\
-                                                        <div class="sele_box clearfix">\
+                                                    <div class="select">\
+                                                        <div class="select_box clearfix">\
                                                             <span>NFV_test_node</span>\
                                                             <img src="../../static/common/img/bottom.png" alt="">\
                                                         </div>\
-                                                        <div class="option_box">\
+                                                        <div class="options_box">\
                                                             <span>NFV_test_node1</span>\
                                                             <span>NFV_test_node2</span>\
                                                             <span>NFV_test_node3</span>\
@@ -407,83 +425,38 @@
 
             $('body').append(html) // 生成弹窗
             $('.create_pop').css('display', 'block')
-            
+
             callback ? callback() : ''
 
-            var remove_ele = function() { // 删除弹窗的方法
+            var remove_ele = function () { // 删除弹窗的方法
                 $('.create_pop').remove()
             }
 
             var click_remove = [ // 关闭弹窗的元素
                 '.popup>.close'
             ]
-            
-            click_remove.forEach( ele => { // 为所有关闭弹窗的元素，执行删除弹窗的方法
+
+            click_remove.forEach(ele => { // 为所有关闭弹窗的元素，执行删除弹窗的方法
                 $(ele).click(remove_ele)
             })
         }
 
-        var step_fn = function() { // 步骤的方法
-            selectfn('.node .fixed_select span', '.node .input_box', '.node .fixed_select') // 弹窗里的节点下拉选择方法
-            function selectfn_capy(spa, par) { // 步骤中下拉选项框的方法
-            var span = $(spa); // 获取所有的下拉选项 '.options span'
-            var options = span.parent(); // 获取下拉框 '.options'
-            var select = options.prev(); // 获取选项框 '.select'
-            var paren = options.parents(':eq(2)')
-
-            paren.on('click', select, function () { // 给下拉选项添加一个点击事件
-                if ($(event.target).hasClass('sele_box')) {
-                    var display = $(event.target).next().css('display')
-                    if (display == 'none') { // 如果是隐藏，点击则显示，反之亦然
-                        $(event.target).next().css('display', 'block');
-                    } else {
-                        $(event.target).next().css('display', 'none');
-                    }
-                } else {
-                    var display = $(event.target).parent().next().css('display')
-                    if (display == 'none') { // 如果是隐藏，点击则显示，反之亦然
-                        $(event.target).parent().next().css('display', 'block');
-                    } else {
-                        $(event.target).parent().next().css('display', 'none');
-                    }
-                }
-            })
-
-            paren.on('click', spa, function () {
-                var content = $(this).text(); // 获取当前选项卡的内容
-                $(this).parent().prev().find('span').text(content); // 将选择的内容展示到选项框中
-                $(this).parent().css('display', 'none'); // 隐藏下拉框
-            })
-
-            paren.on('mouseleave', '.custom', function () { // 设置当鼠标移出时隐藏下拉选项
-                if ($(event.target).hasClass('sele_box')) { // 判断当前点击的元素是否是sele_box元素
-                    var display = $(event.target).next().css('display') // 获取当前点击的选项框
-                    if (display === 'block') {
-                        $(event.target).next().css('display', 'none'); // 隐藏选项框
-                    }
-                } else if ($(event.target).parent().hasClass('option_box')) {
-                    var display = $(event.target).parent().css('display')
-                    if (display === 'block') {
-                        $(event.target).parent().css('display', 'none');
-                    }
-                }
-            })
-        }
-
+        myFn.prototype.step_fn = function () { // 步骤的方法
             function add_select(ele) { // 添加步骤的html结构
                 $(ele).click(function () { // 给新增步骤按钮注册点击事件
                     var ul = $('.td_box')
                     var serial_number = $(this).parents('ul').find('li').length + 1
-                    var html = '<li>\
+                    var html =
+                        '<li>\
                                                 <span class="serial_number">' +
                         serial_number +
                         '</span>\
-                                                <div class="custom">\
-                                                    <div class="sele_box clearfix">\
+                                                <div class="select">\
+                                                    <div class="select_box clearfix">\
                                                         <span>NFV_test_node</span>\
                                                         <img src="../../static/common/img/bottom.png" alt="">\
                                                     </div>\
-                                                    <div class="option_box">\
+                                                    <div class="options_box">\
                                                         <span>NFV_test_node1</span>\
                                                         <span>NFV_test_node2</span>\
                                                         <span>NFV_test_node3</span>\
@@ -498,20 +471,23 @@
 
             add_select('.create_pop .td_box button') // 调用生成步骤的方法
 
-            selectfn_capy('.custom .option_box span', '.td_box') // 调用下拉选项的方法
+            dropDownSelect('li .options_box span') // 步骤下拉选项
+            dropDownSelect('.node .options_box span') // 节点下拉选项
 
             $('.td_box').on('click', 'li .icon-guanbi1', function () { // 删除步骤的方法
                 $(this).parent().remove()
+                var lis = $('.td_box').find('li') // 获取删除后的所有li
+                var liNum = lis.length + 1 // 获取li的个数
+
+                lis.find('.serial_number').each((index, ele) => { // 重置序列号
+                    $(ele).text(index + 1)
+                })
             })
         }
 
-        $('.add .create').click(function() { // 为"创建新任务的按钮"注册事件
-            popup_copy(false, step_fn) // 调用弹窗的方法
-        })
+        var my = new myFn()
 
-        $('table .edit').click(function() { // 为"编辑"操作注册事件
-            popup_copy('编辑工作流任务', step_fn)
-        })
+
     </script>
 </body>
 

@@ -100,15 +100,18 @@
     margin-left: 5px;
 }
 
+/* 重置select_box样式 */
+.pack .tab_top .select .select_box {
+    height: 38px;
+    line-height: 38px;
+    border-color: #007bff;
+}
+
 .pack .tab_top .select {
     min-width: 109px;
-    height: 38px;
     float: right;
-    color: #007bff;
-    line-height: 38px;
     text-align: center;
 	border-radius: 4px;
-    border: solid 1px #007bff;
     cursor: pointer;
     position: relative;
     font-size: 16px;
@@ -127,23 +130,23 @@
     margin-right: 17px;
 }
 
-.pack .tab_top .options {
-    width: 108px;
+.pack .tab_top .options_box {
     top: 40px;
-    right: 0px;
+    /* right: 0px;
     padding: 1px;
-    z-index: 255;
     float: right;
     display: none;
     overflow: hidden;
     position: absolute;
     border-radius: 4px;
+    box-sizing: border-box;
     background-color: #fff;
-    border: 1px solid #007bff;
+    border: 1px solid #007bff; */
     border-top: none;
+    border-bottom: 1px solid #007bff;
 }
 
-.pack .tab_top .options span {
+.pack .tab_top .options_box span {
     /* width: 97px; */
     height: 40px;
     line-height: 40px;
@@ -152,7 +155,7 @@
     cursor: pointer;
 }
 
-.pack .tab_top .options span:hover {
+.pack .tab_top .options_box span:hover {
     background-color: #ebebeb;
 }
 

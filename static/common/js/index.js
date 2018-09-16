@@ -1,12 +1,150 @@
-// 顶部头像的滑入滑出效果 -satrt
-$('.banner .top_right .t_one').mouseenter(function () {
-    $('.top_right .t_one .personal').css('display', 'block')
-})
+// 创建父类(公共)构造函数
+var PublicFunction = function () {
+    this.topHeadPortraitEffect() // 顶部头像效果
+}
 
-$('.banner>.top').mouseleave(function () {
-    $('.top_right .t_one .personal').css('display', 'none')
-})
-// 顶部头像的滑入滑出效果 -end
+// 创建父类原型方法-start
+
+/*
+    简单提示弹窗
+    show        点击这个元素创建"简单提示弹窗"-必选项
+    h1          主标题-可选项
+    h2          副标题-可选项
+    open        自动弹窗-可选项(调用该方法时自动弹窗)
+    callback    可执行自己的代码逻辑, 参数类型是函数(方法)-可选项
+*/
+PublicFunction.prototype.popup_delete = function (show, h1, h2, open, callback) {
+    function logic() {
+        var title = h1 ? h1 : '是否确认删除该工作流？'
+        var subtitle = h2 ? h2 : '你是否确认删除该工作流，删除之后不可恢复！'
+        // html 的基本结构
+        var html_str =
+            '<div class="dele_pop">\
+            <div class="deel_box">\
+                <h1>' +
+            title + '</h1>\
+                <h2>' + subtitle +
+            '</h2>\
+                <div class="btn_box">\
+                    <a href="#" class="dele_colse">取消</a>\
+                    <a href="#" class="dele_ok">确认</a>\
+                </div>\
+                <div class="dele_colse">\
+                    <i class="iconfont icon-guanbi"></i>\
+                </div>\
+            </div>\
+        </div>'
+
+        $('body').append(html_str)
+
+        var box = $('.dele_pop')
+        var dele_colse = $('.dele_pop .dele_colse') // 取消
+        var dele_ok = $('.dele_pop .dele_ok') // 确定
+
+        box.css('display', 'block') // 显示
+        dele_colse.click(function () { // 点击取消按钮
+            box.remove() // 删除弹窗
+            callback ? callback() : '' // 有则执行
+            return false // 阻止默认行为防止页面再次刷新,导致滚动条置顶
+        })
+
+        dele_ok.click(function () { // 点击取消按钮
+            box.remove()
+            return false
+        })
+    }
+
+    if (open === 'ok') {
+        logic()
+    } else {
+        $(show).click(function () {
+            logic()
+        })
+    }
+}
+
+// 顶部头像效果
+PublicFunction.prototype.topHeadPortraitEffect = function () {
+    // 顶部头像的滑入滑出效果 -satrt
+    $('.banner .top_right .t_one').mouseenter(function () {
+        $('.top_right .t_one .personal').css('display', 'block')
+    })
+
+    $('.banner>.top').mouseleave(function () {
+        $('.top_right .t_one .personal').css('display', 'none')
+    })
+    // 顶部头像的滑入滑出效果 -end
+}
+
+// 弹窗
+PublicFunction.prototype.popup = function (ele, show, hide1, hide2, preservation) {
+    $(show).click(function () { // 点击添加显示弹窗 '.add'
+        var win_width = $('html').width();
+        var win_height = $('html').height();
+
+        $(ele).css({
+            'display': 'block',
+            'width': win_width,
+            'height': win_height
+        }); // '.popup' 弹窗的元素
+    })
+
+    $(hide1).click(function () { // 点击隐藏弹窗 '.close'
+        $(ele).css('display', 'none');
+        return false; // 阻止默认行为
+    })
+
+    $(hide2).not('.popup').click(function () { // 点击隐藏弹窗 '.close2'
+        $(ele).css('display', 'none');
+        return false; // 阻止默认行为
+    })
+
+    if (preservation) {
+        $(preservation).click(function () { // 点击隐藏弹窗 '.close2'
+            if (event.target === this) {
+                $(ele).css('display', 'none');
+                return false; // 阻止默认行为
+            }
+        })
+    }
+}
+
+// 图标滑动效果
+PublicFunction.prototype.iconSlideEffect = function () { // 右边联系的小图标效果(滑入滑出)
+    var lock = true; // 设置锁
+
+    $('.contact').mouseenter(function () { // 右边联系的小图标效果(滑入滑出)
+        if (lock) {
+            lock = false; // 关锁
+            $('.contact>i').removeClass('icon-ai-message').addClass('icon-icon-'); // 切换图标
+            $('.contact .close').animate({ // 滑出
+                width: 120
+            }, 300, function() {
+                lock = true;
+            })
+        }
+    });
+
+    $('.contact').mouseleave(function () { // 右边联系的小图标效果(滑入滑出)
+        if(lock) {
+            $('.contact>i').removeClass('icon-icon-').addClass('icon-ai-message'); // 切换图标
+            $('.contact .close').animate({ // 滑入
+                width: 0
+            }, 300, function() {
+                lock = true;
+            })
+        }
+    });
+}
+
+// 创建父类原型方法-end
+
+// 创建父类(公共)对象
+var auto = new PublicFunction()
+
+
+
+
 
 
 function footer() { // 判断页面高度，让footer始终在底部
@@ -192,37 +330,37 @@ function sowing_map() { // 旋转木马
     timer = setInterval(nextimg, 3000); // 旋转木马
 }
 
-function popup(ele, show, hide1, hide2, preservation) { // 弹窗
-    $(show).click(function () { // 点击添加显示弹窗 '.add'
-        var win_width = $('html').width();
-        var win_height = $('html').height();
+// function popup(ele, show, hide1, hide2, preservation) { // 弹窗
+//     $(show).click(function () { // 点击添加显示弹窗 '.add'
+//         var win_width = $('html').width();
+//         var win_height = $('html').height();
 
-        $(ele).css({
-            'display': 'block',
-            'width': win_width,
-            'height': win_height
-        }); // '.popup' 弹窗的元素
-    })
+//         $(ele).css({
+//             'display': 'block',
+//             'width': win_width,
+//             'height': win_height
+//         }); // '.popup' 弹窗的元素
+//     })
 
-    $(hide1).click(function () { // 点击隐藏弹窗 '.close'
-        $(ele).css('display', 'none');
-        return false; // 阻止默认行为
-    })
+//     $(hide1).click(function () { // 点击隐藏弹窗 '.close'
+//         $(ele).css('display', 'none');
+//         return false; // 阻止默认行为
+//     })
 
-    $(hide2).not('.popup').click(function () { // 点击隐藏弹窗 '.close2'
-        $(ele).css('display', 'none');
-        return false; // 阻止默认行为
-    })
+//     $(hide2).not('.popup').click(function () { // 点击隐藏弹窗 '.close2'
+//         $(ele).css('display', 'none');
+//         return false; // 阻止默认行为
+//     })
 
-    if (preservation) {
-        $(preservation).click(function () { // 点击隐藏弹窗 '.close2'
-            if (event.target === this) {
-                $(ele).css('display', 'none');
-                return false; // 阻止默认行为
-            }
-        })
-    }
-}
+//     if (preservation) {
+//         $(preservation).click(function () { // 点击隐藏弹窗 '.close2'
+//             if (event.target === this) {
+//                 $(ele).css('display', 'none');
+//                 return false; // 阻止默认行为
+//             }
+//         })
+//     }
+// }
 
 /*
     简单提示弹窗
@@ -232,55 +370,55 @@ function popup(ele, show, hide1, hide2, preservation) { // 弹窗
     open        自动弹窗-可选项(调用该方法时自动弹窗)
     callback    可执行自己的代码逻辑, 参数类型是函数(方法)-可选项
 */
-function popup_delete(show, h1, h2, open, callback) {
-    function logic() {
-        var title = h1 ? h1 : '是否确认删除该工作流？'
-        var subtitle = h2 ? h2 : '你是否确认删除该工作流，删除之后不可恢复！'
-        // html 的基本结构
-        var html_str =
-            '<div class="dele_pop">\
-            <div class="deel_box">\
-                <h1>' +
-            title + '</h1>\
-                <h2>' + subtitle +
-            '</h2>\
-                <div class="btn_box">\
-                    <a href="#" class="dele_colse">取消</a>\
-                    <a href="#" class="dele_ok">确认</a>\
-                </div>\
-                <div class="dele_colse">\
-                    <i class="iconfont icon-guanbi"></i>\
-                </div>\
-            </div>\
-        </div>'
+// function popup_delete(show, h1, h2, open, callback) {
+//     function logic() {
+//         var title = h1 ? h1 : '是否确认删除该工作流？'
+//         var subtitle = h2 ? h2 : '你是否确认删除该工作流，删除之后不可恢复！'
+//         // html 的基本结构
+//         var html_str =
+//             '<div class="dele_pop">\
+//             <div class="deel_box">\
+//                 <h1>' +
+//             title + '</h1>\
+//                 <h2>' + subtitle +
+//             '</h2>\
+//                 <div class="btn_box">\
+//                     <a href="#" class="dele_colse">取消</a>\
+//                     <a href="#" class="dele_ok">确认</a>\
+//                 </div>\
+//                 <div class="dele_colse">\
+//                     <i class="iconfont icon-guanbi"></i>\
+//                 </div>\
+//             </div>\
+//         </div>'
 
-        $('body').append(html_str)
+//         $('body').append(html_str)
 
-        var box = $('.dele_pop')
-        var dele_colse = $('.dele_pop .dele_colse') // 取消
-        var dele_ok = $('.dele_pop .dele_ok') // 确定
+//         var box = $('.dele_pop')
+//         var dele_colse = $('.dele_pop .dele_colse') // 取消
+//         var dele_ok = $('.dele_pop .dele_ok') // 确定
 
-        box.css('display', 'block') // 显示
-        dele_colse.click(function () { // 点击取消按钮
-            box.remove() // 删除弹窗
-            callback ? callback() : '' // 有则执行
-            return false // 阻止默认行为防止页面再次刷新,导致滚动条置顶
-        })
+//         box.css('display', 'block') // 显示
+//         dele_colse.click(function () { // 点击取消按钮
+//             box.remove() // 删除弹窗
+//             callback ? callback() : '' // 有则执行
+//             return false // 阻止默认行为防止页面再次刷新,导致滚动条置顶
+//         })
 
-        dele_ok.click(function () { // 点击取消按钮
-            box.remove()
-            return false
-        })
-    }
+//         dele_ok.click(function () { // 点击取消按钮
+//             box.remove()
+//             return false
+//         })
+//     }
 
-    if(open === 'ok') {
-        logic()
-    } else {
-        $(show).click(function () {
-            logic()
-        })
-    }
-}
+//     if(open === 'ok') {
+//         logic()
+//     } else {
+//         $(show).click(function () {
+//             logic()
+//         })
+//     }
+// }
 
 
 /*
@@ -418,13 +556,66 @@ function selectfn(spa, sele, option) { // 下拉选项框的方法
         })
     }
 
-    select.parent().mouseleave(function() { // 设置当鼠标移出时隐藏下拉选项
+    select.parent().mouseleave(function () { // 设置当鼠标移出时隐藏下拉选项
         $(this).children().eq(1).css('display', 'none');
     })
 }
 /*
 bios-end
 */
+
+
+function dropDownSelect(spa) { // 步骤中下拉选项框的方法
+    var span = $(spa); // 获取所有的下拉选项 '.options span'
+    var options = span.parent(); // 获取下拉框 '.options'
+    var select = options.prev(); // 获取选项框 '.select'
+    var selectClass = select.attr('class')
+    var optionsClass = options.attr('class')
+    var paren = options.parents(':eq(2)')
+    var selectBox = select.parent()
+
+    paren.on('click', select, function () { // 给下拉选项添加一个点击事件
+        if ($(event.target).attr('class') === selectClass) { // 判断是否是select元素
+            var display = $(event.target).next().css('display')
+            if (display == 'none') { // 如果是隐藏，点击则显示，反之亦然
+                $(event.target).next().css('display', 'block')
+            } else {
+                $(event.target).next().css('display', 'none')
+            }
+            console.log($(event.target).parent().next()[0])
+        } else { // input_box
+            var display = $(event.target).parent().next().css('display')
+            if (display == 'none') { // 如果是隐藏，点击则显示，反之亦然
+                $(event.target).parent().next().css('display', 'block')
+            } else {
+                $(event.target).parent().next().css('display', 'none')
+            }
+            console.log($(event.target).parent().next()[0])
+        }
+        // console.log(event.target)
+        console.log(select)
+    })
+
+    paren.on('click', spa, function () {
+        var content = $(this).text(); // 获取当前选项卡的内容
+        $(this).parent().prev().find('span').text(content); // 将选择的内容展示到选项框中
+        $(this).parent().css('display', 'none'); // 隐藏下拉框
+    })
+
+    paren.on('mouseleave', selectBox, function () { // 设置当鼠标移出时隐藏下拉选项
+        if ($(event.target).attr('class') === selectClass) { // 判断当前点击的元素是否是select_box元素
+            var display = $(event.target).next().css('display') // 获取当前点击的选项框
+            if (display === 'block') {
+                $(event.target).next().css('display', 'none'); // 隐藏选项框
+            }
+        } else if ($(event.target).parent().attr('class') === optionsClass) {
+            var display = $(event.target).parent().css('display')
+            if (display === 'block') {
+                $(event.target).parent().css('display', 'none');
+            }
+        }
+    })
+}
 
 
 /*
