@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="../../static/common/css/public.css">
     <link rel="stylesheet" href="../../static/task/css/nfv.css">
     <link rel="stylesheet" href="../../static/task/css/bios_config.css">
+    <style>
+        li .select .select_box {
+            padding-left: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -338,7 +343,7 @@
                                     <tr>\
                                         <td>任务名称</td>\
                                         <td>\
-                                            <div class="form_input">\
+                                            <div class="input_box">\
                                                 <input type="text" placeholder="任务名称">\
                                             </div>\
                                         </td>\
@@ -346,14 +351,14 @@
                                     <tr>\
                                         <td>任务描述</td>\
                                         <td>\
-                                            <textarea name="" class="text" placeholder="/opt/"></textarea>\
+                                            <textarea name="" class="text" placeholder="/opt/" style="height: 81px;"></textarea>\
                                         </td>\
                                     </tr>\
                                     <tr>\
                                         <td>节点名称</td>\
                                         <td class="td_option node">\
                                             <div class="select">\
-                                                <div class="input_box">\
+                                                <div class="select_box">\
                                                     <span>NFV_test_node</span>\
                                                     <img src="../../static/common/img/bottom.png" alt="">\
                                                 </div>\

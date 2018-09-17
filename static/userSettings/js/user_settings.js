@@ -92,7 +92,7 @@ $('.verifying_mailbox').click(function () { // 点击验证邮箱
 
 
 // 右边联系的小图标效果(滑入滑出)
-icon_switch()
+auto.iconSlideEffect()
 
 
 $('.hand_box ul button').click(function() { // 更换头像

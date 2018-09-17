@@ -72,12 +72,12 @@
                         <span>创建新项目</span>
                     </button>
                 </div>
-                <div>
-                    <div class="select">
+                <div class="select">
+                    <div class="select_box">
                         <span>全部</span>
                         <img src="../../static/common/img/bottom.png" alt="">
                     </div>
-                    <div class="options">
+                    <div class="options_box">
                         <span>全部</span>
                         <span>高级</span>
                         <span>中级</span>
@@ -317,14 +317,16 @@
                         <tr>
                             <td>项目优先级</td>
                             <td class="td_option project">
-                                <div class="input_box">
-                                    <span>高</span>
-                                    <img src="../../static/common/img/bottom.png" alt="">
-                                </div>
-                                <div class="fixed_select">
-                                    <span>高</span>
-                                    <span>中</span>
-                                    <span>低</span>
+                                <div class="select">
+                                    <div class="input_box">
+                                        <span>高</span>
+                                        <img src="../../static/common/img/bottom.png" alt="">
+                                    </div>
+                                    <div class="fixed_select">
+                                        <span>高</span>
+                                        <span>中</span>
+                                        <span>低</span>
+                                    </div>
                                 </div>
                             </td>
                         </tr>
@@ -394,8 +396,8 @@
     <script type="text/javascript" src="../../static/project/js/laydate.js"></script>
     <script type="text/javascript" src="../../static/common/js/index.js"></script>
     <script type="text/javascript">
-        selectfn('.tab_top .options span', '.tab_top .select', '.tab_top .options') // 下拉选项框的方法
-        popup('.add_pop', '.add', '.popup .close', '.popup .close2', '.popup .preservation') // 创建新节点的弹窗
+        selectfn('.tab_top .options_box span', '.tab_top .select_box', '.tab_top .options_box') // 下拉选项框的方法
+        auto.popup('.add_pop', '.add', '.popup .close', '.popup .close2', '.popup .preservation') // 创建新节点的弹窗
         selectfn('.project .fixed_select span', '.project .input_box', '.project .fixed_select')
 
         // date-start
@@ -411,7 +413,7 @@
             theme: 'molv'
         });
 
-        popup('.dele_pop', '.slave_box .icon-guanbi1', '.dele_colse', '.dele_ok') // 弹窗
+        auto.popup('.dele_pop', '.slave_box .icon-guanbi1', '.dele_colse', '.dele_ok') // 弹窗
     </script>
 </body>
 

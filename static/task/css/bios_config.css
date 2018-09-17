@@ -17,7 +17,10 @@
     top: 39px;
     width: 100%;
     position: absolute;
+    border-radius: 4px;
     box-sizing: border-box;
+    /* background-color: #fff;
+    border: 1px solid #007bff; */
 }
 
 .tab_top .select .options span {
@@ -107,15 +110,6 @@ input[type="checkbox"]:checked + label::before {
 	background-color: #f8f8f8;
 }
 
-.select .select_box span {
-    /* float: left; */
-}
-
-.node .select .options_box {
-    top: -106px;
-    left: -1px;
-}
-
 .td_box button {
     width: 79px;
     height: 35px;
@@ -137,8 +131,26 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .popup .node .options_box {
-    left: 15px;
-    top: -121px;
-    width: 307px;
+}
+
+.popup .text {
+    height: 80px;
+}
+
+.td_option .select {
+    color: #333333;
+}
+
+.td_option .select .select_box {
+    height: 39px;
+    line-height: 39px;
+    text-indent: 10px;
+}
+
+.td_option .select .options_box {
+    top: 41px;
+    width: 305px;
+    border-top: none;
     box-sizing: border-box;
+    border-bottom: 1px solid #007bff;
 }

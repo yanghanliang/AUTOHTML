@@ -48,9 +48,9 @@
 }
 
 /* 弹窗-satart */
-.popup .fixed_select {
+/* .popup .fixed_select {
     width: 307px;
-}
+} */
 
 .popup .text {
     height: 80px;
@@ -107,20 +107,54 @@
     margin-left: 5px;
 }
 
+/* .pack .tab_top .select - start */
+.select {
+    color: #333;
+}
+
 .pack .tab_top .select {
-    width: 98px;
-    height: 38px;
+    width: 114px;
     float: right;
+}
+
+.pack .tab_top .select_box {
+    width: 100%;
+    height: 38px;
+    padding: 0;
+    font-size: 16px;
     color: #007bff;
     line-height: 38px;
     text-align: center;
-	border-radius: 4px;
     border: solid 1px #007bff;
-    cursor: pointer;
-    position: relative;
-    font-size: 16px;
 }
 
+.pack .tab_top .select_box span {
+    padding-right: 10px;
+}
+
+.select .options_box {
+    top: 40px;
+    border-top: none;
+    text-align: center;
+    border-bottom: 1px solid #007bff;
+}
+
+.td_option .select {
+    width: 307px;
+}
+
+td .select .select_box {
+    height: 39px;
+    line-height: 39px;
+    text-indent: 10px;
+}
+
+.td_option .options_box {
+    top: 41px;
+    text-align: left;
+}
+/* .pack .tab_top .select - end */
+/* 
 .pack .tab_top .select img {
     top: 15px;
     right: 8px;
@@ -157,8 +191,12 @@
 
 .pack .tab_top .options span:hover {
     background-color: #ebebeb;
-}
+} */
 /* tab_top-end */
+
+.pop_table tr td:nth-child(1) {
+    text-align: right;
+}
 
 
 /* table-start */
