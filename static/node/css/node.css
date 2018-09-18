@@ -344,7 +344,10 @@
 .select .select_box {
     height: 40px;
     line-height: 40px;
-    padding-right: 35px;
+}
+
+.select .select_box .icon-shaixuan {
+    margin-right: 10px;
 }
 
 .select .options_box {

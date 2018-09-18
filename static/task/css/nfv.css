@@ -4,6 +4,7 @@
     z-index: 999;
 }
 
+
 /* title-satrt */
 .title {
     width: 100%;
@@ -52,114 +53,6 @@
     position: relative;
     background-color: #f7f8f9;
 }
-
-
-/* tab_top-satrt */
-.content .pack .tab_top {
-    width: 100%;
-    height: 40px;
-    margin-top: 30px;
-    line-height: 40px;
-    position: relative;
-}
-
-.pack .tab_top .add {
-    float: left;
-}
-
-.pack .tab_top .add a {
-    height: 38px;
-    float: left;
-    font-size: 15px;
-	color: #fff;
-    line-height: 38px;
-    margin-right: 15px;
-    text-align: center;
-    border-radius: 4px;
-    padding: 0 15px 0 10px;
-    border: solid 1px #007bff;
-    background-color: #007bff;
-}
-
-.pack .tab_top .add a:nth-child(1) {
-    color: #007bff;
-    background-color: #fff;
-}
-
-.pack .tab_top .add a i {
-    float: left;
-    font-size: 20px;
-}
-
-.pack .tab_top .add a:nth-child(1) i {
-    font-size: 30px;
-}
-
-.pack .tab_top .add a span {
-    float: left;
-    margin-left: 5px;
-}
-
-/* 重置select_box样式 */
-.pack .tab_top .select .select_box {
-    height: 38px;
-    line-height: 38px;
-    border-color: #007bff;
-}
-
-.pack .tab_top .select {
-    min-width: 109px;
-    float: right;
-    text-align: center;
-	border-radius: 4px;
-    cursor: pointer;
-    position: relative;
-    font-size: 16px;
-    background-color: #fff;
-}
-
-.pack .tab_top .select img {
-    top: 15px;
-    right: 8px;
-    margin-left: 3px;
-    position: absolute;
-}
-
-.pack .tab_top .select_box span {
-    font-size: 15px;
-    padding: 0 20px 0 5px;
-}
-
-.pack .tab_top .options_box {
-    top: 40px;
-    /* right: 0px;
-    padding: 1px;
-    float: right;
-    display: none;
-    overflow: hidden;
-    position: absolute;
-    border-radius: 4px;
-    box-sizing: border-box;
-    background-color: #fff;
-    border: 1px solid #007bff; */
-    border-top: none;
-    border-bottom: 1px solid #007bff;
-}
-
-.pack .tab_top .options_box span {
-    /* width: 97px; */
-    height: 40px;
-    line-height: 40px;
-    display: block;
-    text-align: center;
-    cursor: pointer;
-}
-
-.pack .tab_top .options_box span:hover {
-    background-color: #ebebeb;
-}
-
-/* tab_top-end */
 
 /* table-start */
 /* 操作-satrt */
@@ -230,13 +123,14 @@ table tr td button:hover div {
     display: block;
 }
 
-/* table tr td button:hover {
-    color: #007bff;
-} */
-
 .table tr td span:nth-last-child(1) a {
     color: #007bff;
 }
 /* 操作-end */
 /* table-end */
 /* content-end */
+
+
+.tab_top .select_box {
+    padding-right: 0px;
+}

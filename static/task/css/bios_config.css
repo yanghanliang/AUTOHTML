@@ -2,17 +2,6 @@
     color: #007bff;
 }
 
-.tab_top .search {
-    width: 200px;
-	height: 40px;
-    float: right;
-    margin-right: 15px;
-    border-radius: 4px;
-    padding-left: 10px;
-	background-color: #ffffff;
-	border: solid 1px #e1e1e1;
-}
-
 .pack .tab_top .options {
     top: 39px;
     width: 100%;
@@ -20,57 +9,6 @@
     border-radius: 4px;
     box-sizing: border-box;
 }
-
-.pack .tab_top .select_box span {
-    padding-right: 27px;
-}
-
-.tab_top .pid {
-    float: right;
-    display: none;
-	border-radius: 4px;
-    border-right: none;
-    position: absolute;
-    background-color: #fff;
-    border: solid 1px #007bff;
-    border-right: none;
-	box-shadow: 0px 0px 6px 0px 
-		rgba(46, 46, 46, 0.2);
-}
-
-.tab_top .pid li {
-    height: 40px;
-    padding: 0 10px;
-    line-height: 40px;
-}
-
-.pack .tab_top .select i {
-    font-size: 20px;
-    vertical-align: middle;
-}
-
-.tab_top .pid li:hover {
-    cursor: pointer;
-    color: #007bff;
-    background-color: #ebebeb;
-}
-
-
-/* 构建中-start */
-table .construction li:nth-child(1) {
-    color: #007bff;
-}
-
-table .construction li:nth-child(2) {
-    width: 56px;
-    height: 10px;
-    border-radius: 10px;
-    margin: 7px auto auto auto;
-    border: 2px solid #007bff;
-    background: url(../../../static/common/img/record.gif) no-repeat;
-}
-/* 构建中-end */
-
 
 .table td .edit {
     color: #666;
@@ -85,41 +23,6 @@ input[type="checkbox"]:checked + label::before {
 	content: '\2714';
 	color: #007bff;
 	border-color: #007bff;
-}
-
-.td_box .select {
-    width: 160px;
-    vertical-align: top;
-    display: inline-block;
-    background-color: #ffffff;
-}
-
-.serial_number {
-    width: 56px;
-    height: 33px;
-    margin-left: 15px;
-    line-height: 33px;
-    border-radius: 4px;
-    text-align: center;
-    display: inline-block;
-    border: solid 1px #ebebeb;
-	background-color: #f8f8f8;
-}
-
-.td_box button {
-    width: 79px;
-    height: 35px;
-    color: #fff;
-    line-height: 35px;
-    border-radius: 4px;
-    text-align: center;
-    vertical-align: top;
-    background-color: #007bff;
-}
-
-
-.td_box>li {
-    margin-top: 8px;
 }
 
 .popup .pop_line {
@@ -138,13 +41,4 @@ input[type="checkbox"]:checked + label::before {
 .td_option .select .select_box {
     height: 39px;
     line-height: 39px;
-    text-indent: 10px;
-}
-
-.td_option .select .options_box {
-    top: 41px;
-    width: 307px;
-    border-top: none;
-    box-sizing: border-box;
-    border-bottom: 1px solid #007bff;
 }

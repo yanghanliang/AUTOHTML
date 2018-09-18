@@ -98,13 +98,13 @@
                             <span>全部任务</span>
                             <img src="../../static/common/img/bottom.png" alt="">
                         </div>
-                        <div class="options_box">
-                            <span>未创建</span>
-                            <span>待创建</span>
-                            <span>red</span>
-                            <span>built</span>
-                            <span>true</span>
-                        </div>
+                        <ul class="options_box">
+                            <li>未创建</li>
+                            <li>待创建</li>
+                            <li>red</li>
+                            <li>built</li>
+                            <li>true</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="table_show">
@@ -457,7 +457,7 @@
     <script type="text/javascript" src="../../static/common/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="../../static/common/js/index.js"></script>
     <script type="text/javascript">
-        selectfn('.tab_top .options_box span', '.tab_top .select_box', '.tab_top .options_box') // 下拉选项框的方法
+        selectfn('.tab_top .options_box li') // 下拉选项框的方法
         auto.popup_delete('.icon-shanchu', '是否确认删除该任务？', '您是否确认删除该任务，删除之后不可恢复！') // 删除任务的弹窗
     </script>
 </body>

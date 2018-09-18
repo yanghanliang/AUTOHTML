@@ -345,14 +345,16 @@ form .label_left {
 
 .select {
     width: 460px;
-    float: right;
-    text-indent: 13px;
 }
 
 .select .select_box {
     height: 48px;
     line-height: 48px;
     margin-bottom: 20px;
+}
+
+.select .options_box {
+    text-indent: 10px;
 }
 
 .select img {

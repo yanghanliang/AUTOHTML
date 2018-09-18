@@ -46,55 +46,9 @@
     text-align: right;
 }
 
-/* .content .input_box {
-    width: 280px;
-    height: 20px;
-    line-height: 20px;
-    text-align: left;
-    padding: 10px;
-    margin-left: 15px;
-    border-radius: 4px;
-    border: solid 1px #ebebeb;
-    position: relative;
-    cursor: pointer;
-} */
-
-/* .content .input_box img {
-    top: 16px;
-    right: 8px;
-    position: absolute;
-} */
-
-/* .content .input_box:hover {
-    border: 1px solid #007bff;
-} */
-
-/* 
-.content .form_input input {
-    width: 280px;
-    height: 20px;
-    line-height: 20px;
-    text-align: left;
-    padding: 10px;
-    margin-left: 15px;
-    border-radius: 4px;
-    border: solid 1px #ebebeb;
-} */
-
-/* .content .form_input input {
-    width: 100%;
-    height: 100%;
-} */
-
 .content .form_input input:hover {
     border-color: #007bff;
 }
-
-/* .content .form_input input:focus {
-    width: 279px;
-    text-indent: 9px;
-    border-left: 1px solid #007bff;
-} */
 
 .content .td_text {
     padding-top: 10px;
@@ -192,18 +146,6 @@
     background-color: #007bff;
 }
 
-/* .content .fixed_select {
-    width: 300px;
-    background-color: #ffffff;
-    border-radius: 4px;
-    border: solid 1px #007bff;
-    overflow: hidden;
-} */
-
-/* .content .td_option {
-    position: relative;
-} */
-
 .select {
     color: #333;
     float: left;
@@ -212,43 +154,18 @@
 .select .select_box {
     height: 39px;
     line-height: 39px;
-    text-indent: 10px;
 }
 
 .select .options_box {
     top: 41px;
     border-top: none;
+    text-indent: 10px;
     border-bottom: 1px solid #007bff;
 }
 
 .input_box {
     width: 283px;
 }
-
-/* .content .td_option .fixed_select {
-    top: 43px;
-    left: 15px;
-    position: absolute;
-    text-align: left;
-    font-size: none;
-    z-index: 999;
-    display: none;
-    cursor: pointer;
-}
-
-.content .td_option .fixed_select span {
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-    display: block;
-    text-indent: 10px;
-}
-
-.content .td_option .fixed_select span:hover {
-    background-color: #ebebeb;
-} */
-/* table-end */
-
 
 /* popup-start */
 .add_pop .pop_box {
@@ -381,7 +298,6 @@
 
 .min_sele .box span {
     height: 40px;
-    /* width: 230px; */
     line-height: 40px;
     display: block;
     cursor: pointer;
@@ -416,8 +332,8 @@
 .sele_bottom i,.sele_top i {
     font-size: 12px;
 }
-
 /* 一级分类-end */
+
 
 /* 二级分类-start */
 .sele_box2 .min_sele {
@@ -451,8 +367,8 @@
     left: -10px;
     position: absolute;
 }
-
 /* 二级分类-end */
+
 
 /* 三级分类-start */
 .pop_box .sele_box3 {
@@ -487,6 +403,7 @@
     position: absolute;
 }
 /* 三级分类-end */
+
 
 .pop_box .btn {
     left: 50%;
