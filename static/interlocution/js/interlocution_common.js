@@ -41,7 +41,7 @@ function interlocution_public() {
 
     bios_echSwitch('.tab_switch>span', '.content>.w4 .box', '.tab_switch>span') // tab切换
 
-    selectfn('.add_pop .label .fixed_select li', '.add_pop .label .label_right', '.add_pop .label .fixed_select') // 标签类型下拉选择
+    selectfn('.add_pop .label .options_box li', '.add_pop .label .select_box', '.add_pop .label .options_box') // 标签类型下拉选择
 
-    selectfn('.add_pop .problem .fixed_select li', '.add_pop .problem .label_right', '.add_pop .problem .fixed_select') // 问题类型下拉选择
+    selectfn('.add_pop .problem .options_box li', '.add_pop .problem .select_box', '.add_pop .problem .options_box') // 问题类型下拉选择
 }

@@ -14,7 +14,7 @@ Workflow.prototype = auto
 // 过滤器
 Workflow.prototype.filter = function () {
     $('.tab_top .options_box').css('display', 'block')
-    var spans = $('.tab_top .options_box span')
+    var spans = $('.tab_top .options_box li')
     spans.click(function () {
         // var v_url = $(this).attr('v-url')
         var top = parseInt($('.tab_top .options_box').css('height')) + 40 - parseInt($('.pid').css(

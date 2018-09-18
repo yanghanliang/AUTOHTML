@@ -77,12 +77,12 @@
                         <span>全部</span>
                         <img src="../../static/common/img/bottom.png" alt="">
                     </div>
-                    <div class="options_box">
-                        <span>全部</span>
-                        <span>高级</span>
-                        <span>中级</span>
-                        <span>低级</span>
-                    </div>
+                    <ul class="options_box">
+                        <li>全部</li>
+                        <li>高级</li>
+                        <li>中级</li>
+                        <li>低级</li>
+                    </ul>
                 </div>
                 <div class="search">
                     <form name="form1" method="post" action="?c=Index&amp;a=search" target="_blank">
@@ -301,7 +301,7 @@
                         <tr>
                             <td>项目名称</td>
                             <td>
-                                <div class="form_input">
+                                <div class="input_box">
                                     <input type="text" placeholder="项目名称">
                                 </div>
                             </td>
@@ -309,7 +309,7 @@
                         <tr>
                             <td>项目描述</td>
                             <td>
-                                <div class="form_input">
+                                <div class="input_box">
                                     <input type="text" placeholder="项目描述">
                                 </div>
                             </td>
@@ -318,22 +318,22 @@
                             <td>项目优先级</td>
                             <td class="td_option project">
                                 <div class="select">
-                                    <div class="input_box">
+                                    <div class="select_box">
                                         <span>高</span>
                                         <img src="../../static/common/img/bottom.png" alt="">
                                     </div>
-                                    <div class="fixed_select">
-                                        <span>高</span>
-                                        <span>中</span>
-                                        <span>低</span>
-                                    </div>
+                                    <ul class="options_box">
+                                        <li>高</li>
+                                        <li>中</li>
+                                        <li>低</li>
+                                    </ul>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>项目负责人</td>
                             <td>
-                                <div class="form_input">
+                                <div class="input_box">
                                     <input type="text" placeholder="项目负责人">
                                 </div>
                             </td>
@@ -341,13 +341,13 @@
                         <tr>
                             <td>开始日期</td>
                             <td>
-                                <input type="text" class="form_input" placeholder="请选择开始日期" id="start_time">
+                                <input type="text" class="input_box" placeholder="请选择开始日期" id="start_time">
                             </td>
                         </tr>
                         <tr>
                             <td>截止日期</td>
                             <td>
-                                <input type="text" class="form_input" placeholder="请选择结束日期" id="end_time">
+                                <input type="text" class="input_box" placeholder="请选择结束日期" id="end_time">
                             </td>
                         </tr>
                         <tr>
@@ -396,9 +396,9 @@
     <script type="text/javascript" src="../../static/project/js/laydate.js"></script>
     <script type="text/javascript" src="../../static/common/js/index.js"></script>
     <script type="text/javascript">
-        selectfn('.tab_top .options_box span', '.tab_top .select_box', '.tab_top .options_box') // 下拉选项框的方法
+        selectfn('.tab_top .options_box li', '.tab_top .select_box', '.tab_top .options_box') // 下拉选项框的方法
         auto.popup('.add_pop', '.add', '.popup .close', '.popup .close2', '.popup .preservation') // 创建新节点的弹窗
-        selectfn('.project .fixed_select span', '.project .input_box', '.project .fixed_select')
+        selectfn('.project .options_box li', '.project .select_box', '.project .options_box')
 
         // date-start
         lay('#version').html('-v' + laydate.v);

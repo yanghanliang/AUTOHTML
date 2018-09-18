@@ -23,13 +23,17 @@
     border: 1px solid #007bff; */
 }
 
-.tab_top .select .options span {
-    margin-right: 0px;
+.pack .tab_top .select_box span {
+    padding-right: 27px;
 }
 
-.pack .tab_top .select .select_box {
+/* .tab_top .select .options span {
+    margin-right: 0px;
+} */
+
+/* .pack .tab_top .select .select_box {
     padding: 0 10px;
-}
+} */
 
 .tab_top .pid {
     float: right;
@@ -139,6 +143,7 @@ input[type="checkbox"]:checked + label::before {
 
 .td_option .select {
     color: #333333;
+    width: 307px;
 }
 
 .td_option .select .select_box {

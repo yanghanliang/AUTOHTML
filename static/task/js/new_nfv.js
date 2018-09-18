@@ -1,5 +1,5 @@
-selectfn('.project .fixed_select span', '.project .input_box', '.project .fixed_select') // 项目名称的下拉选项
-selectfn('.node .fixed_select span', '.node .input_box', '.node .fixed_select') // 节点名称的下拉选项
+selectfn('.project .options_box li', '.project .select_box', '.project .options_box') // 项目名称的下拉选项
+selectfn('.node .options_box li', '.node .select_box', '.node .options_box') // 节点名称的下拉选项
 
 // 业务逻辑-start
 var setTop = function (ele, box, offset) { // arr-鼠标移入的元素, ele-子级选择元素的盒子, offset-偏移量

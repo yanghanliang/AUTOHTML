@@ -126,12 +126,12 @@
                             <span>过滤器</span>
                             <img src="../../static/common/img/bottom.png" alt="">
                         </div>
-                        <div class="options_box">
-                            <span v-url="a">清除过滤器</span>
-                            <span v-url="b">项目</span>
-                            <span v-url="c">状态</span>
-                            <span v-url="d">可建造</span>
-                        </div>
+                        <ul class="options_box">
+                            <li v-url="a">清除过滤器</li>
+                            <li v-url="b">项目</li>
+                            <li v-url="c">状态</li>
+                            <li v-url="d">可建造</li>
+                        </ul>
                     </div>
                     <ul class="pid">
                         <li>全部</li>
@@ -492,11 +492,11 @@
                                         <span>CMCC_NFVi_Test</span>
                                         <img src="../../static/common/img/bottom.png" alt="">
                                     </div>
-                                    <div class="options_box">
-                                        <span>CMCC_NFVi_Test1</span>
-                                        <span>CMCC_NFVi_Test2</span>
-                                        <span>CMCC_NFVi_Test3</span>
-                                    </div>
+                                    <ul class="options_box">
+                                        <li>CMCC_NFVi_Test1</li>
+                                        <li>CMCC_NFVi_Test2</li>
+                                        <li>CMCC_NFVi_Test3</li>
+                                    </ul>
                                </div>
                             </td>
                         </tr>
@@ -508,11 +508,11 @@
                                         <span>NFV_test_node</span>
                                         <img src="../../static/common/img/bottom.png" alt="">
                                     </div>
-                                    <div class="options_box">
-                                        <span>NFV_test_node1</span>
-                                        <span>NFV_test_node2</span>
-                                        <span>NFV_test_node3</span>
-                                    </div>
+                                    <ul class="options_box">
+                                        <li>NFV_test_node1</li>
+                                        <li>NFV_test_node2</li>
+                                        <li>NFV_test_node3</li>
+                                    </ul>
                                 </div>
                             </td>
                         </tr>
@@ -675,8 +675,8 @@
         workflow.buildingTaskWindows(6) // 构建
 
         auto.popup('.create_pop', '.add .create', '.close', '.close2') // 创建BIOS配置任务的弹窗
-        selectfn('.project .options_box span', '.project .select_box', '.project .options_box') // 弹窗里的项目下拉选择方法
-        selectfn('.node .options_box span', '.node .select_box', '.node .options_box') // 弹窗里的节点下拉选择方法
+        selectfn('.project .options_box li', '.project .select_box', '.project .options_box') // 弹窗里的项目下拉选择方法
+        selectfn('.node .options_box li', '.node .select_box', '.node .options_box') // 弹窗里的节点下拉选择方法
 
         auto.popup('.add_pop', 'table .edit', '.close', '.close2') // 编辑BIOS配置任务
     </script>

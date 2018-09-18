@@ -46,7 +46,7 @@
     text-align: right;
 }
 
-.content .input_box {
+/* .content .input_box {
     width: 280px;
     height: 20px;
     line-height: 20px;
@@ -57,28 +57,29 @@
     border: solid 1px #ebebeb;
     position: relative;
     cursor: pointer;
-}
+} */
 
-.content .input_box img {
+/* .content .input_box img {
     top: 16px;
     right: 8px;
     position: absolute;
-}
+} */
 
-.content .input_box:hover {
+/* .content .input_box:hover {
     border: 1px solid #007bff;
-}
+} */
 
+/* 
 .content .form_input input {
     width: 280px;
-    /* height: 20px;
+    height: 20px;
     line-height: 20px;
     text-align: left;
     padding: 10px;
     margin-left: 15px;
     border-radius: 4px;
-    border: solid 1px #ebebeb; */
-}
+    border: solid 1px #ebebeb;
+} */
 
 /* .content .form_input input {
     width: 100%;
@@ -101,7 +102,7 @@
 }
 
 .content .text {
-    width: 298px;
+    width: 300px;
     height: 80px;
     background-color: #ffffff;
     border-radius: 4px;
@@ -191,19 +192,40 @@
     background-color: #007bff;
 }
 
-.content .fixed_select {
+/* .content .fixed_select {
     width: 300px;
     background-color: #ffffff;
     border-radius: 4px;
     border: solid 1px #007bff;
     overflow: hidden;
-}
+} */
 
-.content .td_option {
+/* .content .td_option {
     position: relative;
+} */
+
+.select {
+    color: #333;
+    float: left;
 }
 
-.content .td_option .fixed_select {
+.select .select_box {
+    height: 39px;
+    line-height: 39px;
+    text-indent: 10px;
+}
+
+.select .options_box {
+    top: 41px;
+    border-top: none;
+    border-bottom: 1px solid #007bff;
+}
+
+.input_box {
+    width: 283px;
+}
+
+/* .content .td_option .fixed_select {
     top: 43px;
     left: 15px;
     position: absolute;
@@ -224,7 +246,7 @@
 
 .content .td_option .fixed_select span:hover {
     background-color: #ebebeb;
-}
+} */
 /* table-end */
 
 

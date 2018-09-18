@@ -125,9 +125,9 @@
     position: absolute;
 }
 
-.pack .tab_top .select span {
+.pack .tab_top .select_box span {
     font-size: 15px;
-    margin-right: 17px;
+    padding: 0 20px 0 5px;
 }
 
 .pack .tab_top .options_box {

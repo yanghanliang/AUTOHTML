@@ -13,8 +13,26 @@
     <link rel="stylesheet" href="../../static/task/css/nfv.css">
     <link rel="stylesheet" href="../../static/task/css/bios_config.css">
     <style>
-        li .select .select_box {
-            padding-left: 10px;
+        .td_box .clearfix>span,.td_box .clearfix .select,.td_box .clearfix i {
+            float: left;
+        }
+
+        .td_box .clearfix .select {
+            margin: 0 5px;
+        }
+
+        .td_box .clearfix i {
+            margin-top: 10px;
+        }
+
+        .td_option .select {
+            width: 308px;
+            float: left;
+            margin-left: 14px;
+        }
+
+        td .input_box {
+            width: 285px;
         }
     </style>
 </head>
@@ -96,12 +114,12 @@
                             <span>过滤器</span>
                             <img src="../../static/common/img/bottom.png" alt="">
                         </div>
-                        <div class="options_box">
-                            <span v-url="a">清除过滤器</span>
-                            <span v-url="b">项目</span>
-                            <span v-url="c">状态</span>
-                            <span v-url="d">可建造</span>
-                        </div>
+                        <ul class="options_box">
+                            <li v-url="a">清除过滤器</li>
+                            <li v-url="b">项目</li>
+                            <li v-url="c">状态</li>
+                            <li v-url="d">可建造</li>
+                        </ul>
                     </div>
                     <ul class="pid">
                         <li>全部</li>
@@ -351,7 +369,7 @@
                                     <tr>\
                                         <td>任务描述</td>\
                                         <td>\
-                                            <textarea name="" class="text" placeholder="/opt/" style="height: 81px;"></textarea>\
+                                            <textarea name="" class="text" placeholder="/opt/"></textarea>\
                                         </td>\
                                     </tr>\
                                     <tr>\
@@ -362,11 +380,11 @@
                                                     <span>NFV_test_node</span>\
                                                     <img src="../../static/common/img/bottom.png" alt="">\
                                                 </div>\
-                                                <div class="options_box">\
-                                                    <span>NFV_test_node1</span>\
-                                                    <span>NFV_test_node2</span>\
-                                                    <span>NFV_test_node3</span>\
-                                                </div>\
+                                                <ul class="options_box">\
+                                                    <li>NFV_test_node1</li>\
+                                                    <li>NFV_test_node2</li>\
+                                                    <li>NFV_test_node3</li>\
+                                                </ul>\
                                             </div>\
                                         </td>\
                                     </tr>\
@@ -374,48 +392,48 @@
                                         <td>步骤</td>\
                                         <td>\
                                             <ul class="td_box">\
-                                                <li class="a">\
+                                                <li class="clearfix">\
                                                     <span class="serial_number">1</span>\
                                                     <div class="select">\
                                                         <div class="select_box clearfix">\
                                                             <span>NFV_test_node</span>\
                                                             <img src="../../static/common/img/bottom.png" alt="">\
                                                         </div>\
-                                                        <div class="options_box">\
-                                                            <span>NFV_test_node1</span>\
-                                                            <span>NFV_test_node2</span>\
-                                                            <span>NFV_test_node3</span>\
-                                                        </div>\
+                                                        <ul class="options_box">\
+                                                            <li>NFV_test_node1</li>\
+                                                            <li>NFV_test_node2</li>\
+                                                            <li>NFV_test_node3</li>\
+                                                        </ul>\
                                                     </div>\
                                                     <button>新增步骤</button>\
                                                 </li>\
-                                                <li class="b">\
+                                                <li class="clearfix">\
                                                     <span class="serial_number">2</span>\
                                                     <div class="select">\
                                                         <div class="select_box clearfix">\
                                                             <span>NFV_test_node</span>\
                                                             <img src="../../static/common/img/bottom.png" alt="">\
                                                         </div>\
-                                                        <div class="options_box">\
-                                                            <span>NFV_test_node1</span>\
-                                                            <span>NFV_test_node2</span>\
-                                                            <span>NFV_test_node3</span>\
-                                                        </div>\
+                                                        <ul class="options_box">\
+                                                            <li>NFV_test_node1</li>\
+                                                            <li>NFV_test_node2</li>\
+                                                            <li>NFV_test_node3</li>\
+                                                        </ul>\
                                                     </div>\
                                                     <i class="iconfont icon-guanbi1"></i>\
                                                 </li>\
-                                                <li class="c">\
+                                                <li class="clearfix">\
                                                     <span class="serial_number">3</span>\
                                                     <div class="select">\
                                                         <div class="select_box clearfix">\
                                                             <span>NFV_test_node</span>\
                                                             <img src="../../static/common/img/bottom.png" alt="">\
                                                         </div>\
-                                                        <div class="options_box">\
-                                                            <span>NFV_test_node1</span>\
-                                                            <span>NFV_test_node2</span>\
-                                                            <span>NFV_test_node3</span>\
-                                                        </div>\
+                                                        <ul class="options_box">\
+                                                            <li>NFV_test_node1</li>\
+                                                            <li>NFV_test_node2</li>\
+                                                            <li>NFV_test_node3</li>\
+                                                        </ul>\
                                                     </div>\
                                                     <i class="iconfont icon-guanbi1"></i>\
                                                 </li>\
@@ -452,7 +470,7 @@
                     var ul = $('.td_box')
                     var serial_number = $(this).parents('ul').find('li').length + 1
                     var html =
-                        '<li>\
+                        '<li class="clearfix">\
                                                 <span class="serial_number">' +
                         serial_number +
                         '</span>\
@@ -461,11 +479,11 @@
                                                         <span>NFV_test_node</span>\
                                                         <img src="../../static/common/img/bottom.png" alt="">\
                                                     </div>\
-                                                    <div class="options_box">\
-                                                        <span>NFV_test_node1</span>\
-                                                        <span>NFV_test_node2</span>\
-                                                        <span>NFV_test_node3</span>\
-                                                    </div>\
+                                                    <ul class="options_box">\
+                                                        <li>NFV_test_node1</li>\
+                                                        <li>NFV_test_node2</li>\
+                                                        <li>NFV_test_node3</li>\
+                                                    </ul>\
                                                 </div>\
                                                 <i class="iconfont icon-guanbi1"></i>\
                                             </li>'
@@ -476,8 +494,8 @@
 
             add_select('.create_pop .td_box button') // 调用生成步骤的方法
 
-            dropDownSelect('li .options_box span') // 步骤下拉选项
-            dropDownSelect('.node .options_box span') // 节点下拉选项
+            dropDownSelect('li .options_box li') // 步骤下拉选项
+            dropDownSelect('.node .options_box li') // 节点下拉选项
 
             $('.td_box').on('click', 'li .icon-guanbi1', function () { // 删除步骤的方法
                 $(this).parent().remove()

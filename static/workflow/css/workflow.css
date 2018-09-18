@@ -1,19 +1,19 @@
-.banner .top {
+/* .banner .top {
     top: 0;
     position: fixed;
     z-index: 999;
-}
+} */
 
 /* content-satrt */
-.content {
+/* .content {
     width: 100%;
     padding-top: 24px;
     position: relative;
     padding-bottom: 32px;
-}
+} */
 
 /* tab_top-satrt */
-.content .pack .tab_top {
+/* .content .pack .tab_top {
     width: 100%;
     height: 40px;
     margin-top: 30px;
@@ -47,7 +47,7 @@
 .pack .tab_top .add button span {
     float: left;
     margin-left: 5px;
-}
+} */
 
 /* .pack .tab_top .select {
     width: 98px;
@@ -101,16 +101,16 @@
     background-color: #ebebeb;
 } */
 
-.select .select_content {
+/* .select .select_content {
 	padding-left: 10px;
-}
+} */
 
 /* tab_top-end */
 
 
 /* table-start */
 /* 操作-satrt */
-.table tr td button {
+/* .table tr td button {
     font-size: 20px;
     cursor: pointer;
     position: relative;
@@ -165,21 +165,21 @@ table tr td button:hover div {
 }
 
 .table table tr td:nth-last-child(1) {
-    width: 250px;
+    width: 250px; */
     /* line-height: 60px;
     text-align: left; */
-}
+/* }
 
 .table table tr td span:nth-last-child(1) a {
     color: #007bff;
-}
+} */
 /* 操作-end */
 /* table-end */
 /* content-end */
 
 
 /* 创建工作流的弹窗-satart */
-.add_pop .popup {
+/* .add_pop .popup {
     top: 50%;
     left: 50%;
     width: 540px;
@@ -257,9 +257,9 @@ table tr td button:hover div {
 .popup .form_input input {
     width: 100%;
     height: 100%;
-    text-indent: 10px;
+    text-indent: 10px; */
     /* display: block; */
-}
+/* }
 
 .popup .form_input input:focus {
     width: 279px;
@@ -271,7 +271,7 @@ table tr td button:hover div {
     width: 272px;
     height: 54px;
     margin-top: 8px;
-    margin-left: 15px;
+    margin-left: 14px;
     border-radius: 4px;
     padding: 13px 14px;
 	background-color: #ffffff;
@@ -353,11 +353,11 @@ table tr td button:hover div {
 .popup .btn button:nth-child(2) {
     color: #fff;
     background-color: #007bff;
-}
+} */
 
 
 /* fixed_select-start */
-.popup .fixed_select {
+/* .popup .fixed_select {
     width: 300px;
     overflow: hidden;
 	border-radius: 4px;
@@ -390,6 +390,6 @@ table tr td button:hover div {
 
 .popup .td_option .fixed_select span:hover {
     background-color: #ebebeb;
-}
+} */
 /* fixed_select-end */
 /* 创建工作流的弹窗-end */

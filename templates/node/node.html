@@ -66,16 +66,16 @@
             </div>
             <div class="w3_right">
                 <div class="select">
-                    <div class="select_content">
+                    <div class="select_box">
                         <i class="iconfont icon-shaixuan"></i>
                         <span>过滤器</span>
                         <img src="../../static/common/img/bottom.png" alt="">
                     </div>
-                    <div class="options" style="display: none;">
-                        <span>清除过滤器</span>
-                        <span>离线</span>
-                        <span>在线</span>
-                    </div>
+                    <ul class="options_box">
+                        <li>清除过滤器</li>
+                        <li>离线</li>
+                        <li>在线</li>
+                    </ul>
                 </div>
                 <div class="search">
                     <form name="form1" method="post" action="?c=Index&amp;a=search" target="_blank">
@@ -405,7 +405,7 @@
                         <tr>
                             <td>节点名称</td>
                             <td>
-                                <div class="form_input">
+                                <div class="input_box">
                                     <input type="text" placeholder="节点名称">
                                 </div>
                             </td>
@@ -413,7 +413,7 @@
                         <tr>
                             <td>节点工作目录</td>
                             <td>
-                                <div class="form_input">
+                                <div class="input_box">
                                     <input type="text" placeholder="/opt/">
                                 </div>
                             </td>
@@ -421,7 +421,7 @@
                         <tr>
                             <td>节点构建数</td>
                             <td>
-                                <div class="form_input">
+                                <div class="input_box">
                                     <input type="text" placeholder="4">
                                 </div>
                             </td>
@@ -429,7 +429,7 @@
                         <tr>
                             <td>节点IP地址</td>
                             <td>
-                                <div class="form_input">
+                                <div class="input_box">
                                     <input type="text" placeholder="192.168.0.100">
                                 </div>
                             </td>
@@ -437,7 +437,7 @@
                         <tr>
                             <td>节点OS用户</td>
                             <td>
-                                <div class="form_input">
+                                <div class="input_box">
                                     <input type="text" value="zhangpang">
                                 </div>
                             </td>
@@ -445,7 +445,7 @@
                         <tr>
                             <td>节点OS密码</td>
                             <td>
-                                <div class="form_input">
+                                <div class="input_box">
                                     <input type="text" value="zhp****123">
                                 </div>
                             </td>
@@ -496,7 +496,7 @@
     <script type="text/javascript">
         auto.popup('.add_pop', '.add', '.popup .close', '.popup .close2', '.popup .preservation') // 创建新节点的弹窗
         auto.popup('.dele_pop', '.minbox>.close', '.dele_colse', '.dele_ok') // 删除节点的弹窗
-        selectfn('.w3_top .options span', '.w3_top .select_content', '.w3_top .options'); // 下拉选项
+        selectfn('.w3_top .options_box li', '.w3_top .select_box', '.w3_top .options_box'); // 下拉选项
     </script>
 </body>
 

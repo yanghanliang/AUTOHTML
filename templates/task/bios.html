@@ -109,13 +109,13 @@
                             <span>全部任务</span>
                             <img src="../../static/common/img/bottom.png" alt="">
                         </div>
-                        <div class="options_box">
-                            <span>未创建</span>
-                            <span>待创建</span>
-                            <span>red</span>
-                            <span>built</span>
-                            <span>true</span>
-                        </div>
+                        <ul class="options_box">
+                            <li>未创建</li>
+                            <li>待创建</li>
+                            <li>red</li>
+                            <li>built</li>
+                            <li>true</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="table_show">
@@ -463,15 +463,17 @@
                     </div>
                     <div>
                         <div class="select">
-                            <span>全部任务</span>
-                            <img src="../../static/common/img/bottom.png" alt="">
-                        </div>
-                        <div class="options">
-                            <span>未创建</span>
-                            <span>待创建</span>
-                            <span>red</span>
-                            <span>built</span>
-                            <span>true</span>
+                            <div class="select_box">
+                                <span>全部任务</span>
+                                <img src="../../static/common/img/bottom.png" alt="">
+                            </div>
+                            <ul class="options_box">
+                                <li>未创建</li>
+                                <li>待创建</li>
+                                <li>red</li>
+                                <li>built</li>
+                                <li>true</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -920,11 +922,11 @@
                                         <span>CMCC_NFVi_Test</span>
                                         <img src="../../static/common/img/bottom.png" alt="">
                                     </div>
-                                    <div class="options_box">
-                                        <span>CMCC_NFVi_Test1</span>
-                                        <span>CMCC_NFVi_Test2</span>
-                                        <span>CMCC_NFVi_Test3</span>
-                                    </div>
+                                    <ul class="options_box">
+                                        <li>CMCC_NFVi_Test1</li>
+                                        <li>CMCC_NFVi_Test2</li>
+                                        <li>CMCC_NFVi_Test3</li>
+                                    </ul>
                                 </div>
                             </td>
                         </tr>
@@ -936,11 +938,11 @@
                                         <span>NFV_test_node</span>
                                         <img src="../../static/common/img/bottom.png" alt="">
                                     </div>
-                                    <div class="options_box">
-                                        <span>NFV_test_node1</span>
-                                        <span>NFV_test_node2</span>
-                                        <span>NFV_test_node3</span>
-                                    </div>
+                                    <ul class="options_box">
+                                        <li>NFV_test_node1</li>
+                                        <li>NFV_test_node2</li>
+                                        <li>NFV_test_node3</li>
+                                    </ul>
                                 </div>
                             </td>
                         </tr>
@@ -1006,16 +1008,15 @@
     <script type="text/javascript" src="../../static/common/js/my-echarts.js"></script>
     <script type="text/javascript" src="../../static/common/js/index.js"></script>
     <script type="text/javascript">
-        selectfn('.tab_top .options_box span', '.tab_top .select_box', '.tab_top .options_box') // 下拉选项框的方法
+        selectfn('.tab_top .options_box li', '.tab_top .select_box', '.tab_top .options_box') // 下拉选项框的方法
         auto.popup('.add_pop', '.add', '.close', '.close2') // 创建BIOS配置任务
         auto.popup_delete('.icon-shanchu', '是否确认删除该任务？', '您是否确认删除该任务，删除之后不可恢复！') // 删除任务的弹窗
-        selectfn('.project .options_box span', '.project .select_box', '.project .options_box') // 弹窗里的项目下拉选择方法
-        selectfn('.node .options_box span', '.node .select_box', '.node .options_box') // 弹窗里的节点下拉选择方法
+        selectfn('.project .options_box li', '.project .select_box', '.project .options_box') // 弹窗里的项目下拉选择方法
+        selectfn('.node .options_box li', '.node .select_box', '.node .options_box') // 弹窗里的节点下拉选择方法
         bios_echSwitch('.tab_switch .tabswit_ct', '.content>.w2', '.tabswit_ct ul') // bios的tab切换
         ech_switch() // echarth图片切换
         task_num() // 工作流任务数目统计信息
         task_state() // 工作流状态统计信息
-
     </script>
 </body>
 

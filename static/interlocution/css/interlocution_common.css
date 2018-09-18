@@ -344,20 +344,27 @@ form .label_left {
     float: left;
 }
 
-form .label_right {
+.select {
     width: 460px;
-    height: 48px;
     float: right;
-    cursor: pointer;
-    text-align: left;
-    padding: 0px 10px;
-    position: relative;
-    border-radius: 4px;
-    margin-bottom: 20px;
-	background-color: #ffffff;
-	border: solid 1px #e5e5e5;
+    text-indent: 13px;
 }
 
+.select .select_box {
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 20px;
+}
+
+.select img {
+    top: 22px;
+}
+
+.select .options_box {
+    top: -121px;
+}
+
+/* 
 form .label_right img {
     top: 20px;
     right: 8px;
@@ -388,7 +395,7 @@ form .fixed_select li {
 form .fixed_select li:hover {
     cursor: pointer;
     background-color: #ebebeb;
-}
+} */
 /* select-end */
 
 form .form_btn {
