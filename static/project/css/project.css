@@ -10,6 +10,8 @@
     color: #999999;
 }
 
+
+/* tab_top-start */
 .w3 .box .tab_top {
     width: 100%;
     height: 40px;
@@ -62,13 +64,6 @@
     float: right;
     line-height: 42px;
     box-sizing: border-box;
-    /* color: #007bff; */
-    /* line-height: 38px; */
-    /* border-radius: 4px; */
-    /* border: solid 1px #007bff; */
-    /* cursor: pointer; */
-    /* position: relative; */
-    /* font-size: 16px; */
 }
 
 .select img {
@@ -82,46 +77,6 @@
     border-top: none;
 }
 /* select-end */
-
-/* 
-.box .tab_top .select img {
-    top: 15px;
-    right: 8px;
-    margin-left: 3px;
-    position: absolute;
-}
-
-.box .tab_top .select span {
-    margin-right: 17px;
-} */
-
-/* .box .tab_top .options {
-    width: 96px;
-    top: 40px;
-    right: 0px;
-    float: right;
-    padding: 1px;
-    z-index: 520;
-    display: none;
-    overflow: hidden;
-    position: absolute;
-    border-radius: 4px;
-    border: 1px solid #007bff;
-    background-color: #fff;
-}
-
-.box .tab_top .options span {
-    width: 97px;
-    height: 40px;
-    line-height: 40px;
-    display: block;
-    text-align: center;
-    cursor: pointer;
-}
-
-.box .tab_top .options span:hover {
-    background-color: #ebebeb;
-} */
 /* tab_top-end */
 
 
@@ -350,7 +305,6 @@
 
 
 /* popup-start */
-/* 弹窗-satart */
 .add_pop .popup {
     left: 50%;
     top: 50%;
@@ -390,27 +344,6 @@
 .add_pop .popup table tr td:nth-child(1) {
     text-align: right;
 }
-
-/* .add_pop .popup .input_box {
-    width: 280px;
-    height: 20px;
-    padding: 10px;
-    color: #999;
-    cursor: pointer;
-    text-align: left;
-    line-height: 20px;
-    text-indent: 12px;
-    margin-left: 15px;
-    border-radius: 4px;
-    position: relative;
-    border: solid 1px #ebebeb;
-}
-
-.add_pop .popup .input_box img {
-    top: 16px;
-    right: 8px;
-    position: absolute;
-} */
 
 .td_option .select {
     float: none;
@@ -504,29 +437,6 @@
     text-indent: 20px;
 }
 
-/* .popup .fixed_select {
-    width: 300px;
-    background-color: #ffffff;
-    border-radius: 4px;
-    border: solid 1px #007bff;
-    overflow: hidden;
-} */
-
-/* .popup .td_option {
-    position: relative;
-}
-
-.popup .td_option .fixed_select {
-    top: 43px;
-    left: 15px;
-    position: absolute;
-    text-align: left;
-    font-size: none;
-    z-index: 999;
-    display: none;
-    cursor: pointer;
-} */
-
 .popup .td_option .fixed_select span {
     height: 40px;
     display: block;
@@ -535,12 +445,11 @@
     padding-left: 12px;
 }
 
-.popup .td_option .fixed_select span:hover {
+/* .popup .td_option .fixed_select span:hover {
     background-color: #ebebeb;
-}
+} */
 
 /* date-start */
-
 .time {
     height: 38px;
     min-width: 262px;
@@ -550,6 +459,5 @@
     background-color: #fff;
     border: 1px solid #e6e6e6;
 }
-
 /* date-end */
 /* popup-end */

@@ -468,7 +468,8 @@
             function add_select(ele) { // 添加步骤的html结构
                 $(ele).click(function () { // 给新增步骤按钮注册点击事件
                     var ul = $('.td_box')
-                    var serial_number = $(this).parents('ul').find('li').length + 1
+                    console.log($(this).parents('ul'))
+                    var serial_number = $(this).parents('td').find('ul>.clearfix').length + 1
                     var html =
                         '<li class="clearfix">\
                                                 <span class="serial_number">' +

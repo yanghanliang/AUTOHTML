@@ -230,7 +230,6 @@ body {
     height: 60px;
     width: 120px;
     z-index: 4;
-    /* left: -121px; */
     left: 1px;
     text-align: center;
 	border-radius: 4px;
@@ -363,39 +362,6 @@ form .label_left {
 .select .options_box {
     top: -121px;
 }
-
-/* 
-form .label_right img {
-    top: 20px;
-    right: 8px;
-    margin-left: 3px;
-    position: absolute;
-}
-
-form .fixed_select {
-    top: -128px;
-    right: 0px;
-    width: 481px;
-    display: none;
-    z-index: 255;
-    text-align: left;
-    overflow: hidden;
-    margin-top: -18px;
-	border-radius: 4px;
-    position: absolute;
-	background-color: #ffffff;
-    border: solid 1px #007bff;
-}
-
-
-form .fixed_select li {
-    padding: 0px 10px;
-}
-
-form .fixed_select li:hover {
-    cursor: pointer;
-    background-color: #ebebeb;
-} */
 /* select-end */
 
 form .form_btn {

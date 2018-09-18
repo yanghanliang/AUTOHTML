@@ -546,8 +546,6 @@ function selectfn(spa, sele, option) { // 下拉选项框的方法
         }
     })
 
-
-
     for (var i = 0; i < span.length; i++) {
         $(span[i]).click(function () {
             var content = $(this).text(); // 获取当前选项卡的内容

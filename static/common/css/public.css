@@ -3,6 +3,8 @@
 	margin: 0 auto;
 	position: relative;
 }
+
+
 /*banner-start*/
 .banner {
 	width: 100%;
@@ -155,7 +157,6 @@
     transform: skew(-24deg);
 }
 
-
 .banner .ban_title .list div:nth-child(1) {
 	margin-left: 5px;
 }
@@ -168,7 +169,6 @@
     -ms-transform: skew(24deg);
     transform: skew(24deg);
 }
-
 /*banner-send*/
 
 
@@ -223,20 +223,6 @@ footer .two a {
 /*footer-end*/
 
 
-/* popup-start */
-/* 弹出层的父元素 */
-.add_pop,.dele_pop,.create_pop {
-	top: 0px;
-	left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-    display: none;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-/* popup-end */
-
 /* checkboxStyle-start */
 input[type="checkbox"] + label::before {
 	content: "\a0";  /*不换行空格*/
@@ -274,21 +260,9 @@ input[type="checkbox"] {
 
 
 /* inputBox-start */
-.form_input input {
-	/* width: 285px;
-    height: 19px;
-    padding: 10px;
-	display: block;
-    text-align: left;
-    line-height: 19px;
-    margin-left: 15px;
-    border-radius: 4px;
-    border: solid 1px #ebebeb; */
-}
-
-.form_input input:focus {
+/* .form_input input:focus {
 	border-color: #007bff;
-}
+} */
 /* inputBox-end */
 
 
@@ -419,7 +393,6 @@ input[type="checkbox"] {
 }
 /* 操作-end */
 
-
 .table tr:nth-child(1) {
 	background-color: rgba(235, 235, 235, 0.5);
 }
@@ -438,14 +411,10 @@ input[type="checkbox"] {
     border-radius: 15px;
     background-color: #007bff;
 }
-
-.popup .table_show {
-    height: 384px;
-}
 /* table-end */
 
 
-/* 删除工作流的弹窗-satart */
+/* delete_popup-satart */
 .dele_pop .deel_box {
     width: 500px;
     height: 300px;
@@ -496,10 +465,21 @@ input[type="checkbox"] {
     cursor: pointer;
     position: absolute;
 }
-/* 删除工作流的弹窗-end */
+/* delete_popup-end */
 
 
 /* popup-satrt */
+.add_pop,.dele_pop,.create_pop {
+	top: 0px;
+	left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .popup {
     top: 50%;
     left: 50%;
@@ -511,77 +491,19 @@ input[type="checkbox"] {
     box-shadow: 1px 1px 5px black;
 }
 
-/* 弹窗-satart */
 .popup .pop_table {
     margin: 0 auto;
     border-spacing: 10px;
     border-collapse: separate;
 }
 
+.popup .table_show {
+    height: 384px;
+}
+
 .popup table tr td {
     padding: 0px;
 }
-
-/* .input_box {
-	width: 283px;
-    text-align: left;
-    padding: 10px;
-    margin-left: 15px;
-	border-radius: 4px;
-    position: relative;
-    border: solid 1px #ebebeb;
-} */
-
-.input_box img {
-    top: 16px;
-    right: 8px;
-    position: absolute;
-}
-
-.input_box {
-    width: 285px;
-    height: 20px;
-    line-height: 20px;
-    text-align: left;
-    padding: 10px;
-    margin-left: 15px;
-    border-radius: 4px;
-    position: relative;
-    border: solid 1px #ebebeb;
-}
-
-.input_box:hover {
-    border: 1px solid #007bff;
-}
-
-.input_box input {
-    width: 100%;
-    height: 100%;
-    /* text-indent: 10px; */
-}
-
-/* .popup .form_input {
-    width: 285px;
-    height: 19px;
-    line-height: 19px;
-    text-align: left;
-    padding: 10px;
-    margin-left: 15px;
-    border-radius: 4px;
-    border: solid 1px #ebebeb;
-} */
-
-/* .popup .form_input input:focus {
-    width: 279px;
-    text-indent: 9px;
-    border-left: 1px solid #007bff;
-} */
-/* 
-.popup td textarea {
-    margin-left: 15px;
-    padding: 13px 14px;
-    border-color: #ebebeb;
-} */
 
 .popup .text {
     width: 278px;
@@ -663,50 +585,9 @@ input[type="checkbox"] {
     margin-right: 20px;
 }
 
-
 .popup .btn button:nth-child(2) {
     color: #fff;
     background-color: #007bff;
-}
-
-/* 待删除-start */
-/* .popup .fixed_select {
-    width: 300px;
-    overflow: hidden;
-	border-radius: 4px;
-    box-sizing: border-box;
-	background-color: #ffffff;
-    border: solid 1px #007bff;
-} */
-
-.td_option {
-    cursor: pointer;
-    position: relative;
-}
-
-/* .popup .td_option .fixed_select {
-    top: 41px;
-    left: 15px;
-    position: absolute;
-    text-align: left;
-    font-size: none;
-    z-index: 999;
-    display: none;
-    cursor: pointer;
-} */
-/* 待删除-end */
-
-.td_option .select {
-    width: 305px;
-    height: 39px;
-    margin-left: 15px;
-}
-
-/* 弹窗-end */
-
-
-.popup .popup_title {
-    /* margin-left: 24px; */
 }
 
 .popup .close {
@@ -735,7 +616,6 @@ input[type="checkbox"] {
     margin-bottom: 16px;
 }
 
-/*table-satrt*/
 .dele_pop table {
     width: 600px;
     height: 392px;
@@ -747,31 +627,67 @@ input[type="checkbox"] {
 .dele_pop table tr td {
     text-align: center;
 }
-/*table-end*/
 /* popup-end */
+
+
+/* input_box-start */
+.input_box img {
+    top: 16px;
+    right: 8px;
+    position: absolute;
+}
+
+.input_box {
+    width: 285px;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    padding: 10px;
+    margin-left: 15px;
+    border-radius: 4px;
+    position: relative;
+    border: solid 1px #ebebeb;
+}
+
+.input_box:hover {
+    border: 1px solid #007bff;
+}
+
+.input_box input {
+    width: 100%;
+    height: 100%;
+}
+/* input_box-start */
+
+
+.td_option {
+    cursor: pointer;
+    position: relative;
+}
+
+.td_option .select {
+    width: 305px;
+    height: 39px;
+    margin-left: 15px;
+}
 
 
 /* pull_select-start */
 .select {
-    /* height: 38px; */
     float: right;
     font-size: 16px;
     cursor: pointer;
     color: #007bff;
-    /* line-height: 38px; */
     text-align: left;
     text-indent: 10px;
-    /* text-indent: 5px; */
 	border-radius: 4px;
     position: relative;
-    /* border: solid 1px #007bff; */
 }
 
 .select .select_box {
     height: 34px;
     line-height: 34px;
     border-radius: 4px;
-    /* padding: 0 0 0 10px; */
     padding: 0 10px 0 0;
     border: solid 1px #ebebeb;
 }
@@ -791,36 +707,12 @@ input[type="checkbox"] {
     position: absolute;
 }
 
-/* .select .select_content {
-	padding: 0 30px 0 4px;
-} */
-
-/* .select .options {
-    top: 39px;
-    width: 100%;
-    z-index: 25;
-    float: right;
-	display: none;
-    overflow: hidden;
-	margin-left: -1px;
-    position: absolute;
-    border-radius: 4px;
-    border: 1px solid #007bff;
-    border-top: none;
-    background-color: #fff;
-} */
-
 .select .options li {
     height: 40px;
-    /* display: block; */
     cursor: pointer;
     line-height: 40px;
     text-align: center;
 }
-
-/* .select .options li:hover {
-    background-color: #ebebeb;
-} */
 
 .select:hover .select_box {
     border-color: #007bff;
@@ -832,7 +724,6 @@ input[type="checkbox"] {
     z-index: 255;
     display: none;
     overflow: hidden;
-    /* text-indent: 10px; */
     position: absolute;
     border-radius: 4px;
     box-sizing: border-box;
@@ -845,7 +736,6 @@ input[type="checkbox"] {
     width: 100%;
     height: 40px;
     line-height: 40px;
-    /* display: block; */
 }
 
 .select .options_box li:hover {

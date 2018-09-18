@@ -6,8 +6,8 @@ body {
     height: 80px;
 }
 
-/* public-start */
 
+/* public-start */
 .w4>.left>h2,
 .w4 .right>h2 {
     height: 45px;
@@ -15,11 +15,10 @@ body {
     line-height: 45px;
     text-indent: 10px;
 }
-
 /* public-end */
 
-/* left-start */
 
+/* left-start */
 .w4>.left {
     float: left;
     width: 220px;
@@ -108,6 +107,7 @@ body {
 .right .hand_box ul li:nth-child(1) {
     margin-bottom: 12px;
 }
+
 
 /* change_head-start */
 .right .change_head {
@@ -224,7 +224,6 @@ body {
     border-radius: 4px;
 	border: solid 1px #eeeeee;
 }
-
 /* change_head-end */
 /* hand_box-end */
 
@@ -278,7 +277,6 @@ body {
     border-radius: 4px;
     background-color: #007bff;
 }
-
 /* table-end */
 
 
@@ -315,8 +313,8 @@ body {
     color: #333333;
 }
 /* last_login-end */
-
 /* right-end */
+
 
 /* popup-start */
 .add_pop .popup {
@@ -354,16 +352,6 @@ body {
 	background-color: #e5e5e5;
 }
 
-/* .ll_content .problem {
-    width: 578px;
-    line-height: 48px;
-    position: relative;
-}
-
-.ll_content .problem .fixed_select {
-    top: -129px;
-} */
-
 .ll_content .label_right {
     height: 48px;
     float: right;
@@ -380,7 +368,6 @@ body {
     margin-left: 3px;
     position: absolute;
 }
-
 
 /* fixed_select-start */
 .ll_content .fixed_select {
@@ -792,7 +779,6 @@ body {
     height: 60px;
     width: 120px;
     z-index: 4;
-    /* left: -121px; */
     left: 1px;
     text-align: center;
 	border-radius: 4px;
