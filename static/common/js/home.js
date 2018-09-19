@@ -45,14 +45,14 @@ function linkage_rolling() { // 联动滚动
             lock = false // 关闭锁
             se_box.animate({ // 向上移动一个单位
                 marginTop: -y
-            }, 700, function () {
+            }, 1000, function () {
                 $('.cm_right>ul li').eq(0).appendTo(se_box) // 将第一个移动的元素放到最后面
                 $(this).css('marginTop', 0) // 重置位置
             })
 
             se_box2.animate({
                 marginTop: -y2
-            }, 700, function () {
+            }, 1000, function () {
                 $('.cm_left div').eq(0).appendTo(se_box2)
                 $(this).css('marginTop', 0)
                 lock = true // 开启锁
@@ -69,13 +69,13 @@ function linkage_rolling() { // 联动滚动
             se_box.css('marginTop', -y) // 向上定位一个单位(初始化位置)
             se_box.animate({
                 marginTop: 0 // 向下移动(重置位置)
-            }, 700)
+            }, 1000)
 
             $('.cm_left>div').first().before(last_ele2)
             se_box2.css('marginTop', -y2)
             se_box2.animate({
                 marginTop: 0
-            }, 700, function () {
+            }, 1000, function () {
                 lock = true // 开启锁
             })
         }
@@ -83,7 +83,7 @@ function linkage_rolling() { // 联动滚动
 
     var timer = setInterval(function () { // 设置自动滚动的定时器
         top.trigger('click')
-    }, 700)
+    }, 4000)
 
     mouse_ele.mouseenter(function () { // 鼠标移入
         if (event.target === i_ele || event.target === i_ele2) {
@@ -103,7 +103,7 @@ function linkage_rolling() { // 联动滚动
             bottom.css('display', 'none')
             timer = setInterval(function () { // 开启自动滚动的定时器
                 top.trigger('click')
-            }, 700)
+            }, 4000)
         }
     })
 }
@@ -144,7 +144,7 @@ function roll() { // 滚动
             se_box.css('marginLeft', -x)
             se_box.animate({
                 'marginLeft': 20
-            }, 700, function () {
+            }, 1000, function () {
                 lock = true
             })
 
@@ -156,7 +156,7 @@ function roll() { // 滚动
 
     var timer = setInterval(function () {
         next.trigger('click')
-    }, 700)
+    }, 2000)
 
     mouse_ele.mouseenter(function () {
         next.css('display', 'block')
@@ -172,7 +172,7 @@ function roll() { // 滚动
             prev.css('display', 'none')
             timer = setInterval(function () {
                 next.trigger('click')
-            }, 1500)
+            }, 2000)
         }
     })
 }

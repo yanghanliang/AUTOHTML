@@ -72,42 +72,47 @@
                     <button>编辑</button>
                 </div>
                 <div class="line"></div>
-                <div class="box_content">
-                    <table>
-                        <tr>
-                            <td>开始时间：</td>
-                            <td>2018-07-11</td>
-                            <td></td>
-                            <td>状态：</td>
-                            <td>
-                                <span class="color_red">Red</span>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>结束时间：</td>
-                            <td>2018-07-16</td>
-                            <td></td>
-                            <td>优先级：</td>
-                            <td>高</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>任务数目：</td>
-                            <td>6</td>
-                            <td></td>
-                            <td>项目管理者：</td>
-                            <td>王大花</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>项目描述：</td>
-                            <td colspan="5">这是一个测试数据展示，这是一个测试数据展示，这是一个测试数据展示这是一个测试数据展示，这是一个测试数据展示，这是一个
-                                测试数据展示，这是一个测试数据展示，这是一个测试数据展示，这是一个测试数据展示，这是一个测试数据展示，这是一个测试数
-                                据展示。
-                            </td>
-                        </tr>
-                    </table>
+                <div id="unfold">
+                    <div class="box_content">
+                        <table>
+                            <tr>
+                                <td>开始时间：</td>
+                                <td>2018-07-11</td>
+                                <td></td>
+                                <td>状态：</td>
+                                <td>
+                                    <span class="color_red">Red</span>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>结束时间：</td>
+                                <td>2018-07-16</td>
+                                <td></td>
+                                <td>优先级：</td>
+                                <td>高</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>任务数目：</td>
+                                <td>6</td>
+                                <td></td>
+                                <td>项目管理者：</td>
+                                <td>王大花</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>项目描述：</td>
+                                <td colspan="5">这是一个测试数据展示，这是一个测试数据展示，这是一个测试数据展示这是一个测试数据展示，这是一个测试数据展示，这是一个
+                                    测试数据展示，这是一个测试数据展示，这是一个测试数据展示，这是一个测试数据展示，这是一个测试数据展示，这是一个测试数
+                                    据展示。
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="fold" title="展开或折叠">
+                    展开详情
                 </div>
             </div>
         </div>
@@ -442,6 +447,7 @@
     <script type="text/javascript" src="../../static/common/js/index.js"></script>
     <script type="text/javascript">
         auto.popup_delete('.icon-shanchu', '是否确认删除该任务？', '您是否确认删除该任务，删除之后不可恢复！')
+        auto.unfoldOrFold() // table 折叠或展开
     </script>
 </body>
 

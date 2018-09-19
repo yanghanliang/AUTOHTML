@@ -132,17 +132,18 @@ footer.footer {
 .content .content_top .ct_right {
   float: right;
   width: 440px;
-	height: 270px;
+  height: 270px;
+  position: relative;
   border-radius: 6px;
   padding: 42px 0 0 36px;
-  background: url(../../common/img/home_bg02.png) no-repeat;
+  background: url(../../home/img/time_bg.png) no-repeat;
 }
 
-.content_top li:nth-child(1) {
+.content_top .ct_left li:nth-child(1) {
   font-size: 30px;
 }
 
-.content_top li:nth-child(2) {
+.content_top .ct_left li:nth-child(2) {
   font-size: 18px;
   font-weight: 200;
   margin: 15px 0 69px 0;

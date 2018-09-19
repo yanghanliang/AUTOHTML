@@ -74,46 +74,51 @@
                     <span>这里书写展示BIOS_config_test1的名称</span>
                 </div>
                 <div class="line"></div>
-                <div class="box_content">
-                    <table>
-                        <tr>
-                            <td>任务类型：</td>
-                            <td>BIOS</td>
-                            <td></td>
-                            <td>状态：</td>
-                            <td>
-                                <span class="color_red">Red</span>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>所属项目：</td>
-                            <td>CMCC_NFVi_Test</td>
-                            <td></td>
-                            <td>是否可构建：</td>
-                            <td>
-                                <span class="color_blue">True</span>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>下次创建序号：</td>
-                            <td>6</td>
-                            <td></td>
-                            <td>是否在列队中：</td>
-                            <td>
-                                <span class="color_green">Red</span>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>下次创建序号：</td>
-                            <td colspan="5">这是一个测试数据展示，这是一个测试数据展示，这是一个测试数据展示这是一个测试数据展示，这是一个测试数据展示，这是一个
-                                测试数据展示，这是一个测试数据展示，这是一个测试数据展示，这是一个测试数据展示，这是一个测试数据展示，这是一个测试数
-                                据展示。
-                            </td>
-                        </tr>
-                    </table>
+                <div id="unfold">
+                    <div class="box_content">
+                        <table>
+                            <tr>
+                                <td>任务类型：</td>
+                                <td>BIOS</td>
+                                <td></td>
+                                <td>状态：</td>
+                                <td>
+                                    <span class="color_red">Red</span>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>所属项目：</td>
+                                <td>CMCC_NFVi_Test</td>
+                                <td></td>
+                                <td>是否可构建：</td>
+                                <td>
+                                    <span class="color_blue">True</span>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>下次创建序号：</td>
+                                <td>6</td>
+                                <td></td>
+                                <td>是否在列队中：</td>
+                                <td>
+                                    <span class="color_green">Red</span>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>下次创建序号：</td>
+                                <td colspan="5">这是一个测试数据展示，这是一个测试数据展示，这是一个测试数据展示这是一个测试数据展示，这是一个测试数据展示，这是一个
+                                    测试数据展示，这是一个测试数据展示，这是一个测试数据展示，这是一个测试数据展示，这是一个测试数据展示，这是一个测试数
+                                    据展示。
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="fold" title="展开或折叠">
+                    展开详情
                 </div>
             </div>
         </div>
@@ -413,6 +418,9 @@
 
     <script type="text/javascript" src="../../static/common/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="../../static/common/js/index.js"></script>
+    <script type="text/javascript">
+        auto.unfoldOrFold() // table 折叠或展开
+    </script>
 </body>
 
 </html>

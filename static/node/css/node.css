@@ -45,9 +45,15 @@
 	height: 145px;
 	float: left;
 	margin-top: 20px;
-	position: relative;
+    position: relative;
+    transition: all .2s linear;
 	background-color: #ffffff;
 	border: solid 1px #ebebeb;
+}
+
+.minbox:hover {
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 .minbox .close {

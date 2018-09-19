@@ -164,7 +164,7 @@ td .select {
 /* table-start */
 /* 操作-satrt */
 .table tr td button {
-    width: 14px;
+    /* width: 14px; */
     cursor: pointer;
     font-size: 20px;
     position: relative;
@@ -187,7 +187,7 @@ table tr td button>div {
 }
 
 table tr td button .build {
-    right: -50px;
+    right: -42px;
     display: none;
     border-radius: 3px;
 }
@@ -201,7 +201,7 @@ table tr td button .build div {
 }
 
 table tr td button .delete {
-    right: -58px;
+    right: -48px;
     display: none;
     border-radius: 3px;
 }
@@ -215,8 +215,8 @@ table tr td button .delete div {
 }
 
 table tr td button .queue {
-    width: 40px;
-    left: -52px;
+    width: 80px;
+    left: -90px;
     display: none;
     border-radius: 3px;
 }

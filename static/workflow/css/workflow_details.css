@@ -1,6 +1,7 @@
 .historical .his_box .his_minbox {
     width: 374px;
-	height: 110px;
+    height: 110px;
+    float: left;
 }
 
 .his_box .his_minbox .hismin_title {
@@ -25,18 +26,23 @@
 }
  
 .historical .his_box .his_minbox:nth-child(odd) {
+    float: left;
     margin-right: 0;
 }
 
 .historical .his_box .his_minbox {
-    margin-left: 16px;
+    margin-right: 16px;
     margin-bottom: 16px;
 }
 
 .historical .his_box .his_minbox:nth-child(3n-2) {
-    margin-left: 0;
+    margin-right: 16px;
 }
 
 .historical .his_box .his_minbox:nth-last-child(1) {
     margin-bottom: 0;
+}
+
+.his_minbox td {
+    font-size: 14px;
 }

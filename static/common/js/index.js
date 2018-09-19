@@ -137,6 +137,26 @@ PublicFunction.prototype.iconSlideEffect = function () { // 右边联系的小�
     });
 }
 
+// table 折叠或展开
+PublicFunction.prototype.unfoldOrFold = function () {
+    $('#fold').click(function() {
+        var that = this
+        if($('#unfold').height() <= 200) {
+            $('#unfold').animate({
+                height: $('#unfold>div').height() + 20
+            }, 500, function() {
+                $(that).text('关闭详情')
+            })
+        } else {
+            $('#unfold').animate({
+                height: 135
+            }, 500, function() {
+                $(that).text('打开详情')
+            })
+        }
+    })
+}
+
 // 创建父类原型方法-end
 
 // 创建父类(公共)对象

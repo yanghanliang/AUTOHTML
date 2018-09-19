@@ -13,8 +13,8 @@
 .container .box {
     border-radius: 5px;
     padding-bottom: 57px;
-    box-shadow: 0px 0px 4px 0px rgba(187, 187, 187, 0.2);
-    background: url(../../common/img/table_bg2.png) no-repeat bottom;
+    box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.2);
+    /* background: url(../../common/img/table_bg2.png) no-repeat bottom; */
 }
 
 .container .box .box_title {
@@ -50,10 +50,10 @@
 }
 
 .box .box_content table {
+    color: #333;
+    font-size: 16px;
     margin-top: 21px;
     margin-left: 26px;
-    font-size: 16px;
-    color: #666666;
 }
 
 .box .box_content table tr {
@@ -64,13 +64,7 @@
     width: 315px;
 }
 
-.box .box_content table tr td:nth-child(1) {
-    color: #999999;
-    text-align: right;
-}
-
-.box .box_content table tr td:nth-child(4) {
-    color: #999999;
+.box .box_content table tr td:nth-child(1),.box .box_content table tr td:nth-child(4) {
     text-align: right;
 }
 
@@ -255,13 +249,23 @@ table .button i {
 .historical .his_box .his_minbox {
     width: 568px;
     height: 145px;
-    float: left;
     border-radius: 5px;
 	border: solid 1px #ebebeb;
+    transition: all .2s linear;
+}
+
+.historical .his_box .his_minbox:hover {
+    margin-top: -5px;
+    margin-bottom: 21px;
+    box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.2);
 }
 
 .historical .his_box .his_minbox:nth-child(odd) {
-    margin-right: 20px;
+    float: right;
+}
+
+.historical .his_box .his_minbox:nth-child(even) {
+    float: left;
 }
 
 .historical .his_box .his_minbox:nth-last-child(1) {
@@ -288,12 +292,16 @@ table .button i {
 }
 
 .his_minbox table {
+    color: #333;
     margin-top: 18px;
     margin-left: 19px;
-    color: #999999;
 }
 
 .his_minbox table tr td:nth-child(1) {
     text-align: right;
+}
+
+.his_minbox td {
+    font-size: 16px;
 }
 /* historical-end */
